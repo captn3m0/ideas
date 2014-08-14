@@ -1,5 +1,3 @@
-#ideas
-
 >There's no such thing as an original idea. Every idea worth having has been had thousands of times already.
 > - [swombat](https://news.ycombinator.com/item?id=250793)
 
@@ -71,6 +69,26 @@ The idea was to build a zero-knowledge email storage. Kinda like lavabit, with a
 
 ##Email on top of keybase
 Keybase has a cool API. I wonder if its possible to build an actual email service on top of keybase?
+
+##Hacking via OAauth tokens
+While pen-testing, once you've gained access to the target, it is often necessary to install a backdoor to mantain the access. While this is easily done in case of root access to the machine, this is not that easy if the target is an email account, lets say.
+
+Many online services today (with data of considerable value) offer developers programmatic access to their data by use of APIs, which are usually authenticated via OAuth tokens. What I intend to build is a suite of applications (or a single large one) that allow you to use the application as another user, just by setting up an access token.
+
+While this is certainly possible with existing tools (such as the Facebook Graph API Explorer), it is cumbersome and not user-friendly. The application will mimic the interface, usability, and looks of the actual application to let you maintain access easily enough.
+
+###But OAuth tokens can be revoked
+That is a good point, but one that fails in practice. A password change in most services does not trigger an automatic token revocation because that would leave a lot of developers and users unhappy. However, neither does any service warn you to check your approved applications (especially after a hacking attempt).
+
+###Procedure
+1. You gain access to someone's account.
+2. You create an application (using a fake account or the victim's own account, so its not tied back to you)
+3. You setup our app (direct deploy to Heroku)
+4. You configure the app with the application credentials (app id, secret key)
+5. You authenticate the victim's account against the app
+6. You use the application to access the user's account
+
+The account access will continue till the victim checks his/her approved applications. 
 
 ##Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing.
