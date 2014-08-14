@@ -1,6 +1,27 @@
 >There's no such thing as an original idea. Every idea worth having has been had thousands of times already.
 > - [swombat](https://news.ycombinator.com/item?id=250793)
 
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [OpenBook](#user-content-openbook)
+    - [Expectations](#user-content-expectations)
+    - [Features](#user-content-features)
+    - [Interface](#user-content-interface)
+    - [Backend](#user-content-backend)
+- [iStalk](#user-content-istalk)
+    - [Idea](#user-content-idea)
+    - [Interface](#user-content-interface-1)
+    - [Collaborative Bookmarking](#user-content-collaborative-bookmarking)
+- [Lightspeed for Chrome](#user-content-lightspeed-for-chrome)
+- [Facebook Analytics](#user-content-facebook-analytics)
+- [API for Workflowy](#user-content-api-for-workflowy)
+- [Lettersafe](#user-content-lettersafe)
+- [Email on top of keybase](#user-content-email-on-top-of-keybase)
+- [Hacking via OAauth tokens](#user-content-hacking-via-oaauth-tokens)
+    - [But OAuth tokens can be revoked](#user-content-but-oauth-tokens-can-be-revoked)
+    - [Procedure](#user-content-procedure)
+- [Licence](#user-content-licence)
+
 ##OpenBook
 This is a privacy-awareness application that relies on the TrueCaller data-sharing model. It is meant to teach users that their privacy is not in their hands, but in the hands of those that they trust.
 
