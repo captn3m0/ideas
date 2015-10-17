@@ -4,6 +4,7 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [NoFollow Enforcer](nofollow.md)
+- [PyPi Notifier](pypi-notifier.md)
 - [OpenBook](#user-content-openbook)
     - [Expectations](#user-content-expectations)
     - [Features](#user-content-features)
