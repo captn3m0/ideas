@@ -22,6 +22,7 @@
 - [Hacking via OAauth tokens](#user-content-hacking-via-oaauth-tokens)
     - [But OAuth tokens can be revoked](#user-content-but-oauth-tokens-can-be-revoked)
     - [Procedure](#user-content-procedure)
+- [Pluggable Notify Daemon for linux](#notify-daemon-for-linux)
 - [Licence](#user-content-licence)
 
 ##OpenBook
@@ -133,6 +134,19 @@ That is a good point, but one that fails in practice. A password change in most 
 6. You use the application to access the user's account
 
 The account access will continue till the victim checks his/her approved applications. 
+
+## Notify Daemon for Linux
+
+Not another window manager daemon, because lots of them already exist and there
+are already good APIs in almost all languages that make it easy to integrate with
+all of them. However, Linux DEs are still missing an easy way for me to get notifications
+about the thousands of little different things (such as build notifications).
+
+The idea is to have a simple config where you can connect your bazillian accounts
+via OAuth, and we will poll all your accounts and give you "clickable" notifications
+for each of them. (GMail notifications might open your mail client if you click reply)
+
+Keep it pluggable, otherwise its of no use.
 
 ##Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing.
