@@ -18,6 +18,7 @@
 - [API for Workflowy](#user-content-api-for-workflowy)
 - [Lettersafe](#user-content-lettersafe)
 - [Email on top of keybase](#user-content-email-on-top-of-keybase)
+- [Newsletters for GitHub](#newsletters-for-github)
 - [Hacking via OAauth tokens](#user-content-hacking-via-oaauth-tokens)
     - [But OAuth tokens can be revoked](#user-content-but-oauth-tokens-can-be-revoked)
     - [Procedure](#user-content-procedure)
@@ -91,6 +92,27 @@ The idea was to build a zero-knowledge email storage. Kinda like lavabit, with a
 
 ##Email on top of keybase
 Keybase has a cool API. I wonder if its possible to build an actual email service on top of keybase?
+
+## Newsletters for GitHub
+
+A lot of github project owners would like to send out newsletters to all of their
+stargazers. However, GitHub doesn't provide anything for that. An easy way would
+be to integrate StarGazers with MailChimp, making sure that people can unstar
+a project to unsubscribe from the mailing list.
+
+Only the repo owners and collaborators (maybe) should have access to sending out
+newsletters. For bonus points, you can replace mailchimp with your own solution.
+
+This could even be monetized slightly for paying off your server costs: newsletter
+access for projects with >1k stars (the mailers that would cost you money) cost
+money to the repo owner as well.
+
+So a tiny python package pays nothing to update its users about a new release, but
+if Angular team wants to send out an update, that gets paid.
+
+And finally, this should automatically subscribe you to any new GitHub releases in
+any project you have starred. This is a missing feature that I think can be best
+implemented by a third-party for now.
 
 ##Hacking via OAauth tokens
 While pen-testing, once you've gained access to the target, it is often necessary to install a backdoor to mantain the access. While this is easily done in case of root access to the machine, this is not that easy if the target is an email account, lets say.
