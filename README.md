@@ -24,6 +24,7 @@
     - [But OAuth tokens can be revoked](#user-content-but-oauth-tokens-can-be-revoked)
     - [Procedure](#user-content-procedure)
 - [Pluggable Notify Daemon for linux](#user-content-notify-daemon-for-linux)
+- [Telegram Channel to RSS](#user-content-telegram-to-rss)
 - [Licence](#user-content-licence)
 
 ## OpenBook
@@ -148,6 +149,22 @@ via OAuth, and we will poll all your accounts and give you "clickable" notificat
 for each of them. (GMail notifications might open your mail client if you click reply)
 
 Keep it pluggable, otherwise its of no use.
+
+## Telegram To RSS
+
+There are quite a lot of Telegram channels that are popping up these days that I really like using.
+Except there are lots of issues with telegram channels:
+
+1. They are inside a closed network by-default. In order to access them you need to use the Telegram client
+2. They are not linkable
+3. No sharability without their client, and even then the content is duplicated.
+
+The idea is to create a generic website that does these 2 things:
+
+1. Publish an RSS Feed of every telegram channel it knows about.
+2. Provide a direct link for every feed item on the RSS, so users without RSS readers can also browse through the listings.
+
+Since `web.telegram.org` is taken already by the web client, maybe something like `opentelegram.in` should work fine.
 
 ## Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing.
