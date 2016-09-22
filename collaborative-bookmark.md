@@ -27,7 +27,8 @@ I'm skipping over conflicts for now
 take this to bookmarks: everyone has a bookmark thing in their browser
 
 [12:50]  
-(chrome has 2 parent directories, though -> bookmarks, and tab bar)
+
+chrome has 2 parent directories, though -> bookmarks, and tab bar
 
 [12:50]  
 I add bookmarks and save them in a special directory. I get a share option in the extension against every parent level directory
