@@ -13,7 +13,7 @@
 - [iStalk](#user-content-istalk)
     - [Idea](#user-content-idea)
     - [Interface](#user-content-interface-1)
-    - [Collaborative Bookmarking](#user-content-collaborative-bookmarking)
+- [Collaborative Bookmarking](#user-content-collaborative-bookmarking)
 - [Lightspeed for Chrome](#user-content-lightspeed-for-chrome)
 - [Facebook Analytics](#user-content-facebook-analytics)
 - [API for Workflowy](#user-content-api-for-workflowy)
@@ -65,13 +65,15 @@ A profile creation page allows you to specify as much information as you have on
 
 Once a profile has been created, we will continuously long-poll the service to fetch new information as and when it becomes available. Real-time notifications are delivered to you as the person's activity is tracked.
 
-### Collaborative Bookmarking
+## Collaborative Bookmarking
 There are a dozen bookmarking services out there, many of them quite well done. However, most services are focused on the idea that bookmarking is a lone-person habit, which someone does in isolation.
 
 I've often described the idea as "dropbox for bookmarks". The core concept is to allow a bookmarking "tag/folder" to be shared with another user, two-way. This means any of the shared members can add/remove bookmarks from that folder.
 All updates (addition/deletion/edits) are notified to every member in the group.
 
 Bookmarking for Teams, in essence. Some good alternatives are [listed in this quora answer](https://www.quora.com/Hello-What-are-the-best-web-apps-for-sharing-bookmarks-across-a-team), which you should read and follow if you're interested in this.
+
+I've described this idea somewhat better in a chat log at [collaborative-bookmark.md](collaborative-bookmark.md)
 
 ## Lightspeed for Chrome
 [Lightspeed](https://www.youtube.com/watch?v=wLnSLFrQDG8) is an experimental UI design (not implemented) for Firefox that focuses on making the New Tab page more functional by giving the browser a decent way to search across bookmarks, open tabs, and history.
