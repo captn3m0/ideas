@@ -168,5 +168,13 @@ The idea is to create a generic website that does these 2 things:
 
 Since `web.telegram.org` is taken already by the web client, maybe something like `opentelegram.in` should work fine.
 
+## Disable Local Fonts Extension
+
+A simple browser extension for web developers that disable local fonts from loading. Alternatively, it raises a grave warning if a web-font was bypassed for a local font.
+
+Based upon this [chrome bug request](https://bugs.chromium.org/p/chromium/issues/detail?id=472136), which asks for this feature.
+
+I came to know about this because [of a comment](https://github.com/captn3m0/disable-web-fonts/issues/1#issuecomment-143665811) on my "disable-web-fonts" extension, which does the opposite. This might be handy for people who want to make sure that web-fonts are working fine for all users.
+
 ## Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing.
