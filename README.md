@@ -17,7 +17,8 @@
 - [Lightspeed for Chrome](#lightspeed-for-chrome)
 - [Facebook Analytics](#facebook-analytics)
 - [API for Workflowy](#api-for-workflowy)
-- [Lettersafe](#lettersafe)
+- [Onion Cannon](onioncannon.md) (E2E encrypted communication for machines)
+- ~~[Lettersafe](#lettersafe)~~
 - [Email on top of keybase](#email-on-top-of-keybase)
 - [Newsletters for GitHub](#user-newsletters-for-github)
 - [Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
