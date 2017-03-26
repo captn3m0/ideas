@@ -27,6 +27,8 @@
 - [Pluggable Notify Daemon for linux](#notify-daemon-for-linux)
 - [Telegram Channel to RSS](#telegram-to-rss)
 - [Disable Local Fonts Extension](#disable-local-fonts-extension)
+- [Community Browser Extension](communities-browser-extension.md)
+- [Card Game Modelling (Research)](card-game-modelling.md)
 - [Licence](#licence)
 
 ## OpenBook
@@ -55,7 +57,7 @@ Unlike facebook, which can directly access _any data_ on their servers, we are l
 This idea probably breaks lots of point in Facebook's ToS, but that doesn't mean it can't be built.
 
 ## iStalk
-This is essentially a unified profile mechanism, where a user's identity is defined by all of their activity on various networks. While this has some cool sub-ideas (like correlating activity between various networks), the most important implication that arises is that it can be a perfect tool for stalking.
+This is essentially a unified profile mechanism, where a user's identity is defined by all of their activity on various networks. While this has some cool sub-ideas (like correlating activity between various networks), the most important implication that arises is that it can be a perfect tool for stalking. However, you can easily add in consent from the original profile owner to clear that concern.
 
 ### Idea
 iStalk lets you "follow" a person across various networks that they belong to. Some networks, like twitter are mostly public, and can be followed very easily. But other networks (like Facebook) are harder to follow by virtue of them requiring a "connection" between the two users. iStalk makes it easier for you by using your account on that network as a proxy-connect mechanism.
@@ -76,6 +78,7 @@ All updates (addition/deletion/edits) are notified to every member in the group.
 Bookmarking for Teams, in essence. Some good alternatives are [listed in this quora answer](https://www.quora.com/Hello-What-are-the-best-web-apps-for-sharing-bookmarks-across-a-team), which you should read and follow if you're interested in this.
 
 I've described this idea somewhat better in a chat log at [collaborative-bookmark.md](collaborative-bookmark.md)
+Google Spaces did some nice work here, but the product was shut down within an year of launch.
 
 ## Lightspeed for Chrome
 [Lightspeed](https://www.youtube.com/watch?v=wLnSLFrQDG8) is an experimental UI design (not implemented) for Firefox that focuses on making the New Tab page more functional by giving the browser a decent way to search across bookmarks, open tabs, and history.
