@@ -13,6 +13,7 @@
 - [iStalk](#istalk)
     - [Idea](#idea)
     - [Interface](#interface-1)
+- [Distributed Privacy conscious TrueCaller Alternative](yellow-pages.md)
 - [Collaborative Bookmarking](#collaborative-bookmarking)
 - [Lightspeed for Chrome](#lightspeed-for-chrome)
 - [Facebook Analytics](#facebook-analytics)
