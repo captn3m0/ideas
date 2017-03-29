@@ -21,7 +21,7 @@
 - [Onion Cannon](onioncannon.md) (E2E encrypted communication for machines)
 - ~~[Lettersafe](#lettersafe)~~
 - [Email on top of keybase](#email-on-top-of-keybase)
-- [Newsletters for GitHub](#user-newsletters-for-github)
+- [Newsletters for GitHub](#newsletters-for-github)
 - [Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
     - [But OAuth tokens can be revoked](#but-oauth-tokens-can-be-revoked)
     - [Procedure](#procedure)
