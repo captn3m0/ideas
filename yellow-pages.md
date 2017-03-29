@@ -200,7 +200,7 @@ there are better ideas, though.
 *Ledger*: A blockchain or ditributed log that maintains any reports.
 
 ## References
-- You should totally read [Falsehoods Programmers Believe About Phone Numbers][solomon].
+- You should totally read [Falsehoods Programmers Believe About Phone Numbers](https://github.com/googlei18n/libphonenumber/blob/master/FALSEHOODS.md)
 - [bitly/dablooms](https://github.com/bitly/dablooms) - an attempt by bitly to solve spam problems with a layered bloom filter which is countable as well
 - [scalable bloom filters](https://www.sciencedirect.com/science/article/pii/S0020019006003127)
 - [A multi-layer bloom filter for duplicated URL detection](http://ieeexplore.ieee.org/document/5578947/?reload=true)
