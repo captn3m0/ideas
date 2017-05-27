@@ -1,6 +1,6 @@
-#nofollow enforcer
+# nofollow enforcer
 
-##Introduction
+## Introduction
 
 Read [What is rel=nofollow](https://support.google.com/webmasters/answer/96569?hl=en) if you don't know what that is.
 
@@ -10,7 +10,7 @@ The above link has the following specific snippet:
 
 However, this is something that is not even attempted by the majority of large user-generated content websites such as medium, quora or even wikipedia. This is an attempt to fix this problem. [Wikipedia](https://meta.wikimedia.org/wiki/Nofollow) had a lot of discussion on this topic before enabling nofollow on all external links in 2007.
 
-##Need
+## Need
 
 - rel=nofollow saves you from spam
 - it improves the quality of content
@@ -23,7 +23,7 @@ We need a reliable way that balances these two approaches. Something that:
 
 For the links that fall in the middle, ie the ones we aren't so sure about we can either play safe and mark them as nofollow or specify a threshold score that must be matched before we unmark them.
 
-##Solution
+## Solution
 
 - StackOverflow is one of the few websites that has even attempted to solve [this issue](http://meta.stackexchange.com/questions/111279/remove-nofollow-on-links-deemed-reputable). Their solution involves a lot of metadata they already have about the link (such as answer/comment score, votes, age etc) and they use that to mark a link as reputed.
 
@@ -31,7 +31,7 @@ Their approach is closed, so as to dissuade spammers from understanding it and w
 
 The general idea is to build a machine learning system that takes in a piece of content along with some optional metadata (such as authorship information) and then uses it to mark each link in the content as reputed/nofollow.
 
-##Notes
+## Notes
 
 _These are free-flow notes about the problem/solution/idea._
 
