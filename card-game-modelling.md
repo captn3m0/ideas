@@ -1,16 +1,15 @@
 # research-idea-boardgame-ai-gym
 
-Open AI Gym allows you to create virtual agents that operate in well-defined environments.
+The idea is a mix of 2 things: reading research papers about Monopoly, and playing a lot of boardgames. There is a lot of good research work around monopoly [0] and certain card games (Poker etc), but modern board games (Catan has a little research community) haven't been looked at much. I wanted to do simulation-based research for modern games, but found that there is no easy tooling available to do this.
 
-Idea: Implement a environment structure for implementing boardgames.
+CardWorld is "OpenAI Gym for boardgames". The complete idea is:
 
-I'm interested in this as a modelling problem and figure out better ways to model a game.
-Other folks can work on the winning part :)
+1. Have a board game framework in place that allows people to write rulesets for their favorite games. These get registered as environments in the Gym.
+2. Allow anyone to submit a agent script for this environment that plays this game. This could be written in any language that the platform supports.
+3. Have a runner system that runs these agents against each other.
 
-A generic framework for creating "simple card games" (multiple players, known start-end conditions) would be a nice thing to have.
+The benefits I can see are these:
 
-Anyone can implement a game in such a system. Once someone has implemented a game, others can write agents for it and start competing.
-
-I was thinking of doing card games like bang! for a start. And then maybe try Uno? (I don't want to limit it to just the standard playing cards, but even doing that would work?)
-
-Would such a thing be useful to people who work in AI?
+1. Crowdsource AI research on turn-based games. The easier it is to write a bot that plays Hearts, the more people will try their hand at it.
+2. Improve our understanding of Card Game Modelling. There has been some research in this area earlier[1] involving languages specific to model this, but I think there is a lot of scope of improvement here.
+3. Give the boardgame community the tools to simulate and understand strategies for modern board games. Everyone knows you must buy the Transports in Monopoly, but what is the optimum strategy for Settlers of Catan?
