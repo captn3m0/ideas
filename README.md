@@ -30,6 +30,7 @@
 - [Disable Local Fonts Extension](#disable-local-fonts-extension)
 - [Community Browser Extension](communities-browser-extension.md)
 - [Card Game Modelling (Research)](card-game-modelling.md)
+- [Arch Linux Package Build System](#arch-linux-package-build-system)
 - [Licence](#licence)
 
 ## OpenBook
@@ -181,6 +182,16 @@ A simple browser extension for web developers that disable local fonts from load
 Based upon this [chrome bug request](https://bugs.chromium.org/p/chromium/issues/detail?id=472136), which asks for this feature.
 
 I came to know about this because [of a comment](https://github.com/captn3m0/disable-web-fonts/issues/1#issuecomment-143665811) on my "disable-web-fonts" extension, which does the opposite. This might be handy for people who want to make sure that web-fonts are working fine for all users.
+
+## Arch Linux Package Build System
+
+The Arch Linux User Repository is great. Except, a lot of packages rely on building-from-source since no binary releases are available. However, the build steps for these packages work very well, resulting in a working build. The idea is to create a AUR build server that takes in a AUR package name as input (it can have a whitelist of such packages), runs it in a docker container, and outputs a generated package file (`tar.xz`) that can then be directly installed on any machine.
+
+This has some security concerns, mainly how do you trust a binary package an external server built?
+
+Planning to solve this with attempting reproducible builds, and publishing everything. You can audit any build artifact whenever you wish. I'll likely just use the Docker ArchLinux image and build against that.
+
+Moreover, the primary audience for this would be me. I would really like to get packages that can be installed much faster because I don't have to build them. I can just have a script that instead downloads the latest build from the server instead of AUR and then just installs the package instead of building it locally.
 
 ## Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing.
