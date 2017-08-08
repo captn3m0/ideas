@@ -33,6 +33,10 @@
 - [Arch Linux Package Build System](#arch-linux-package-build-system)
 - [Licence](#licence)
 
+## Introduction
+
+This is a open repository of personal ideas. Some of these are based on personal interactions, bug reports, and discussions I've had with lots of people. I've tried to give credit wherever possible. I also try to reference similar/existing projects that might relate to the idea, so if you know of something that is interesting in that space, file a PR or send me a link.
+
 ## OpenBook
 This is a privacy-awareness application that relies on the TrueCaller data-sharing model. It is meant to teach users that their privacy is not in their hands, but in the hands of those that they trust.
 
