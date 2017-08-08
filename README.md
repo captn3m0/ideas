@@ -193,6 +193,8 @@ Planning to solve this with attempting reproducible builds, and publishing every
 
 Moreover, the primary audience for this would be me. I would really like to get packages that can be installed much faster because I don't have to build them. I can just have a script that instead downloads the latest build from the server instead of AUR and then just installs the package instead of building it locally.
 
+Take a look at https://github.com/Foxboron/arch-auto-build, which is a very similar attempt at this idea.
+
 ## Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing.
 
