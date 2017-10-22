@@ -91,7 +91,9 @@ Google Spaces did some nice work here, but the product was shut down within an y
 
 It is a pretty neat idea (see the video linked above). My first thought on seeing the video was that most of that stuff could be done using the Chrome APIs for Chrome as well. Chrome does offer a way for an extension to override the new tab page, after all. 
 
-The discussion on [HN](https://news.ycombinator.com/item?id=8151271) is also very good.
+The discussion on [HN](https://news.ycombinator.com/item?id=8151271) is also very good. 
+
+*Update*: There is some progress on the WebExtension porting of Lightspeed, given the recent Firefox updates. With this in place, it should be relatively easier to port the webextension version to Chrome itself.
 
 ## Facebook Analytics
 I like the analytics that WolframAlpha provides for Facebook. Except that they are not really that useful. I'd like an easy query interface that let me "filter" data points, and get back open-data via the Graph API. This means, for eg, getting the most liked music artist among a subset of my friends. The interface I'm thinking of right now is like Gapminder, which allows you to "play" the dataset as it evolves over time.
