@@ -31,6 +31,7 @@
 - [Community Browser Extension](communities-browser-extension.md)
 - [Card Game Modelling (Research)](card-game-modelling.md)
 - [Arch Linux Package Build System](#arch-linux-package-build-system)
+- [Hacker News Research Bot](#hacker-news-research-bot)
 - [Licence](#licence)
 
 ## Introduction
@@ -200,6 +201,10 @@ Planning to solve this with attempting reproducible builds, and publishing every
 Moreover, the primary audience for this would be me. I would really like to get packages that can be installed much faster because I don't have to build them. I can just have a script that instead downloads the latest build from the server instead of AUR and then just installs the package instead of building it locally.
 
 Take a look at https://github.com/Foxboron/arch-auto-build, which is a very similar attempt at this idea.
+
+## Hacker News Research Bot
+
+A bot that posts paper abstracts and links to PDF whenever a paper referencing a research paper is posted to Hacker News. Most scicomm posts that make it to HN almost always have a primary paper reference, and someone ends up posting the paper abstract along with a link to Arxiv or SciHub usually. A bot that automates this for all HN submissions would be a fun project.
 
 ## Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing. I promise to send you a postcard if you ship one of these.
