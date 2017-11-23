@@ -32,6 +32,7 @@
 - [Card Game Modelling (Research)](card-game-modelling.md)
 - [Arch Linux Package Build System](#arch-linux-package-build-system)
 - [Hacker News Research Bot](#hacker-news-research-bot)
+- [Slack Dialer](#slack-dialer)
 - [Licence](#licence)
 
 ## Introduction
@@ -205,6 +206,12 @@ Take a look at https://github.com/Foxboron/arch-auto-build, which is a very simi
 ## Hacker News Research Bot
 
 A bot that posts paper abstracts and links to PDF whenever a paper referencing a research paper is posted to Hacker News. Most scicomm posts that make it to HN almost always have a primary paper reference, and someone ends up posting the paper abstract along with a link to Arxiv or SciHub usually. A bot that automates this for all HN submissions would be a fun project.
+
+# Slack Dialer
+
+All of our company has contact numbers added on Slack, but it is cumbersome to find someone's profile on Slack. A simple dialer application that does OAuth-verification on your Slack profile to get a list of the entire organization, and present a simple dialer for all the people who have contact details added.
+
+Interface would be a simple grid of faces, click to dial, sorted by frequency. A simple search-as-you-type box at the top. Can also be done as a PWA to easily make it cross-platform.
 
 ## Licence
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing. I promise to send you a postcard if you ship one of these.
