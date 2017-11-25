@@ -214,6 +214,9 @@ All of our company has contact numbers added on Slack, but it is cumbersome to f
 Interface would be a simple grid of faces, click to dial, sorted by frequency. A simple search-as-you-type box at the top. Can also be done as a PWA to easily make it cross-platform.
 
 ## Licence
+
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing. I promise to send you a postcard if you ship one of these.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+
+There is a list of other similar lists-of-ideas at [SIMILAR.md](SIMILAR.md)
