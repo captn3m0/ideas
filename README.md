@@ -97,6 +97,8 @@ The discussion on [HN](https://news.ycombinator.com/item?id=8151271) is also ver
 
 *Update*: There is some progress on the WebExtension porting of Lightspeed, given the recent Firefox updates. With this in place, it should be relatively easier to port the webextension version to Chrome itself.
 
+*Update*: @tallpants made this: https://github.com/tallpants/lightspeed
+
 ## Facebook Analytics
 I like the analytics that WolframAlpha provides for Facebook. Except that they are not really that useful. I'd like an easy query interface that let me "filter" data points, and get back open-data via the Graph API. This means, for eg, getting the most liked music artist among a subset of my friends. The interface I'm thinking of right now is like Gapminder, which allows you to "play" the dataset as it evolves over time.
 
