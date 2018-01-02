@@ -202,7 +202,13 @@ Since `web.telegram.org` is taken already by the web client, maybe something lik
 
 ## Disable Local Fonts Extension
 
-A simple browser extension for web developers that disable local fonts from loading. Alternatively, it raises a grave warning if a web-font was bypassed for a local font.
+A simple browser extension for web developers that disable local fonts from loading. Alternatively, it raises a grave warning if a web-font was bypassed for a local font. This is helpful if you are a developer:
+
+- And have some specific font installed locally (say Font Awesome)
+- And are developing a website that uses that font locally
+- And forget to include the Font in your stylesheet
+
+The page continues to function normally in your development setup, but breaks in production.
 
 Based upon this [chrome bug request](https://bugs.chromium.org/p/chromium/issues/detail?id=472136), which asks for this feature.
 
@@ -220,9 +226,13 @@ Moreover, the primary audience for this would be me. I would really like to get 
 
 Take a look at https://github.com/Foxboron/arch-auto-build, which is a very similar attempt at this idea.
 
+This is already handled by the Arch Build System (albeit without Docker). Using that might be a better idea.
+
 ## Hacker News Research Bot
 
 A bot that posts paper abstracts and links to PDF whenever a paper referencing a research paper is posted to Hacker News. Most scicomm posts that make it to HN almost always have a primary paper reference, and someone ends up posting the paper abstract along with a link to Arxiv or SciHub usually. A bot that automates this for all HN submissions would be a fun project.
+
+For Bonus Points: Include a link to the fermat library URL of the paper (if available).
 
 # Slack Dialer
 
