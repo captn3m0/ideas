@@ -13,3 +13,9 @@ The benefits I can see are these:
 1. Crowdsource AI research on turn-based games. The easier it is to write a bot that plays Hearts, the more people will try their hand at it.
 2. Improve our understanding of Card Game Modelling. There has been some research in this area earlier[1] involving languages specific to model this, but I think there is a lot of scope of improvement here.
 3. Give the boardgame community the tools to simulate and understand strategies for modern board games. Everyone knows you must buy the Transports in Monopoly, but what is the optimum strategy for Settlers of Catan?
+
+Work so far:
+
+- https://github.com/captn3m0/sushigo/
+- https://github.com/captn3m0/gothok
+- https://git.captnemo.in/nemo/boardgame2vec/
