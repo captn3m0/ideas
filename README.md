@@ -33,6 +33,7 @@
 - [Arch Linux Package Build System](#arch-linux-package-build-system)
 - [Hacker News Research Bot](#hacker-news-research-bot)
 - [Slack Dialer](#slack-dialer)
+- [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
 - [Licence](#licence)
 
 ## Introduction
@@ -241,6 +242,17 @@ For Bonus Points: Include a link to the fermat library URL of the paper (if avai
 All of our company has contact numbers added on Slack, but it is cumbersome to find someone's profile on Slack. A simple dialer application that does OAuth-verification on your Slack profile to get a list of the entire organization, and present a simple dialer for all the people who have contact details added.
 
 Interface would be a simple grid of faces, click to dial, sorted by frequency. A simple search-as-you-type box at the top. Can also be done as a PWA to easily make it cross-platform.
+
+# Database Conversion Toolkit using an ORM
+
+Something that lets you switch your database between SQLite/MySQL/Postgres/... by using
+an existing ORM framework to import and export out the correct commands.
+
+The grammar differences in most databases are taken care of by an ORM, and the remainder is just
+switching your ORM to use an existing database as the source of truth.
+
+Thought of this after spending a lot of time trying to migrate my Grafana/Gitea setups from
+sqlite to mysql and trying every solution in [this SO question](https://stackoverflow.com/questions/18671/quick-easy-way-to-migrate-sqlite3-to-mysql).
 
 ## Licence
 
