@@ -172,7 +172,7 @@ That is a good point, but one that fails in practice. A password change in most 
 
 The account access will continue till the victim checks his/her approved applications. 
 
-## Notify Daemon for Linux
+## Pluggable Notify Daemon for Linux
 
 Not another window manager daemon, because lots of them already exist and there
 are already good APIs in almost all languages that make it easy to integrate with
@@ -234,6 +234,8 @@ This is already handled by the Arch Build System (albeit without Docker). Using 
 A bot that posts paper abstracts and links to PDF whenever a paper referencing a research paper is posted to Hacker News. Most scicomm posts that make it to HN almost always have a primary paper reference, and someone ends up posting the paper abstract along with a link to Arxiv or SciHub usually. A bot that automates this for all HN submissions would be a fun project.
 
 *Update*: Someone did this! See [@randomdrake's comments on HN](https://news.ycombinator.com/threads?id=randomdrake).
+
+*Update 2*: The mods are not very happy with the [abstract being posted](https://news.ycombinator.com/item?id=16330366), but the rest should be good.
 
 For Bonus Points: Include a link to the fermat library URL of the paper (if available).
 
