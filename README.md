@@ -34,6 +34,7 @@
 - [Hacker News Research Bot](#hacker-news-research-bot)
 - [Slack Dialer](#slack-dialer)
 - [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
+- [Tachiyomi Headless](#tachiyomi-headless) - Comic book scraper for all platforms
 - [Licence](#licence)
 
 ## Introduction
