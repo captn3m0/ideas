@@ -256,6 +256,12 @@ switching your ORM to use an existing database as the source of truth.
 Thought of this after spending a lot of time trying to migrate my Grafana/Gitea setups from
 sqlite to mysql and trying every solution in [this SO question](https://stackoverflow.com/questions/18671/quick-easy-way-to-migrate-sqlite3-to-mysql).
 
+# Tachiyomi Headless
+
+[Tachiyomi](https://github.com/inorichi/tachiyomi/) is a Android application written in Kotlin that
+scrapes comics from various web sources. A headless version of it would be great to have, replacing
+projects such as <https://github.com/evilhero/mylar> with something much more stable.
+
 ## Licence
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing. I promise to send you a postcard if you ship one of these.
