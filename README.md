@@ -1,41 +1,42 @@
->There's no such thing as an original idea. Every idea worth having has been had thousands of times already.
-> - [swombat](https://news.ycombinator.com/item?id=250793)
+> There's no such thing as an original idea. Every idea worth having has been had thousands of times already.
+>
+> -   [swombat](https://news.ycombinator.com/item?id=250793)
 
 **Table of Contents**
 
-- [NoFollow Enforcer](nofollow.md)
-- [PyPi Notifier](pypi-notifier.md)
-- [OpenBook](#openbook)
-    - [Expectations](#expectations)
-    - [Features](#features)
-    - [Interface](#interface)
-    - [Backend](#backend)
-- [iStalk](#istalk)
-    - [Idea](#idea)
-    - [Interface](#interface-1)
-- [Distributed Privacy conscious TrueCaller Alternative](yellow-pages.md)
-- [Collaborative Bookmarking](#collaborative-bookmarking)
-- [Lightspeed for Chrome](#lightspeed-for-chrome)
-- [Facebook Analytics](#facebook-analytics)
-- [API for Workflowy](#api-for-workflowy)
-- [Onion Cannon](onioncannon.md) (E2E encrypted communication for machines)
-- ~~[Lettersafe](#lettersafe)~~
-- [Email on top of keybase](#email-on-top-of-keybase)
-- [Newsletters for GitHub](#newsletters-for-github)
-- [Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
-    - [But OAuth tokens can be revoked](#but-oauth-tokens-can-be-revoked)
-    - [Procedure](#procedure)
-- [Pluggable Notify Daemon for linux](#notify-daemon-for-linux)
-- [Telegram Channel to RSS](#telegram-to-rss)
-- [Disable Local Fonts Extension](#disable-local-fonts-extension)
-- [Community Browser Extension](communities-browser-extension.md)
-- [Card Game Modelling (Research)](card-game-modelling.md)
-- [Arch Linux Package Build System](#arch-linux-package-build-system)
-- [Hacker News Research Bot](#hacker-news-research-bot)
-- [Slack Dialer](#slack-dialer)
-- [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
-- [Tachiyomi Headless](#tachiyomi-headless) - Comic book scraper for all platforms
-- [Licence](#licence)
+-   [NoFollow Enforcer](nofollow.md)
+-   [PyPi Notifier](pypi-notifier.md)
+-   [OpenBook](#openbook)
+    -   [Expectations](#expectations)
+    -   [Features](#features)
+    -   [Interface](#interface)
+    -   [Backend](#backend)
+-   [iStalk](#istalk)
+    -   [Idea](#idea)
+    -   [Interface](#interface-1)
+-   [Distributed Privacy conscious TrueCaller Alternative](yellow-pages.md)
+-   [Collaborative Bookmarking](#collaborative-bookmarking)
+-   [Lightspeed for Chrome](#lightspeed-for-chrome)
+-   [Facebook Analytics](#facebook-analytics)
+-   [API for Workflowy](#api-for-workflowy)
+-   [Onion Cannon](onioncannon.md) (E2E encrypted communication for machines)
+-   ~~[Lettersafe](#lettersafe)~~
+-   [Email on top of keybase](#email-on-top-of-keybase)
+-   [Newsletters for GitHub](#newsletters-for-github)
+-   [Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
+    -   [But OAuth tokens can be revoked](#but-oauth-tokens-can-be-revoked)
+    -   [Procedure](#procedure)
+-   [Pluggable Notify Daemon for linux](#notify-daemon-for-linux)
+-   [Telegram Channel to RSS](#telegram-to-rss)
+-   [Disable Local Fonts Extension](#disable-local-fonts-extension)
+-   [Community Browser Extension](communities-browser-extension.md)
+-   [Card Game Modelling (Research)](card-game-modelling.md)
+-   [Arch Linux Package Build System](#arch-linux-package-build-system)
+-   [Hacker News Research Bot](#hacker-news-research-bot)
+-   [Slack Dialer](#slack-dialer)
+-   [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
+-   [Tachiyomi Headless](#tachiyomi-headless) - Comic book scraper for all platforms
+-   [Licence](#licence)
 
 ## Introduction
 
@@ -47,8 +48,8 @@ This is a privacy-awareness application that relies on the TrueCaller data-shari
 
 The idea itself is to let people browse facebook as someone else. This is done by note of the following points:
 
-1. Facebook allows OAuth API access that allow your application to perform tasks as any user whose token you have.
-2. To start using the service, you must "hand in your data" first. Just like TrueCaller uploads _your entire phonebook_ before you can use the app, openbook requires you to give us access to _your facebook account_ before you can use openbook.
+1.  Facebook allows OAuth API access that allow your application to perform tasks as any user whose token you have.
+2.  To start using the service, you must "hand in your data" first. Just like TrueCaller uploads _your entire phonebook_ before you can use the app, openbook requires you to give us access to _your facebook account_ before you can use openbook.
 
 ### Expectations
 
@@ -59,10 +60,11 @@ This has massive privacy implications. People assume their facebook data (such a
 Since the idea is to teach users about privacy, openbook will not ask for access to all data. It will probably use a harmless data-property that will essentially be made public to all users of the app. Currently, I'm thinking "No. of Friends", which is not always available to public if you've hidden your friend list. It is harmless enough to not cause any mayhem, and yet vital enough to just show that such _attacks are possible_.
 
 ### Interface
-1. Homepage will be a simple FAQ on privacy-related matters and what the app does.
-2. A login page
-3. A search interface to search amongst all users using the app.
-4. A profile page of any user, where you can see their data using someone else's token.
+
+1.  Homepage will be a simple FAQ on privacy-related matters and what the app does.
+2.  A login page
+3.  A search interface to search amongst all users using the app.
+4.  A profile page of any user, where you can see their data using someone else's token.
 
 ### Backend
 
@@ -102,13 +104,13 @@ Google Spaces did some nice work here, but the product was shut down within an y
 
 [Lightspeed](https://www.youtube.com/watch?v=wLnSLFrQDG8) is an experimental UI design (not implemented) for Firefox that focuses on making the New Tab page more functional by giving the browser a decent way to search across bookmarks, open tabs, and history.
 
-It is a pretty neat idea (see the video linked above). My first thought on seeing the video was that most of that stuff could be done using the Chrome APIs for Chrome as well. Chrome does offer a way for an extension to override the new tab page, after all. 
+It is a pretty neat idea (see the video linked above). My first thought on seeing the video was that most of that stuff could be done using the Chrome APIs for Chrome as well. Chrome does offer a way for an extension to override the new tab page, after all.
 
-The discussion on [HN](https://news.ycombinator.com/item?id=8151271) is also very good. 
+The discussion on [HN](https://news.ycombinator.com/item?id=8151271) is also very good.
 
-*Update*: There is some progress on the WebExtension porting of Lightspeed, given the recent Firefox updates. With this in place, it should be relatively easier to port the webextension version to Chrome itself.
+_Update_: There is some progress on the WebExtension porting of Lightspeed, given the recent Firefox updates. With this in place, it should be relatively easier to port the webextension version to Chrome itself.
 
-*Update*: @tallpants made this: https://github.com/tallpants/lightspeed
+_Update_: @tallpants made this: https://github.com/tallpants/lightspeed
 
 ## Facebook Analytics
 
@@ -152,6 +154,7 @@ any project you have starred. This is a missing feature that I think can be best
 implemented by a third-party for now.
 
 ## Hacking via OAauth tokens
+
 While pen-testing, once you've gained access to the target, it is often necessary to install a backdoor to mantain the access. While this is easily done in case of root access to the machine, this is not that easy if the target is an email account, lets say.
 
 Many online services today (with data of considerable value) offer developers programmatic access to their data by use of APIs, which are usually authenticated via OAuth tokens. What I intend to build is a suite of applications (or a single large one) that allow you to use the application as another user, just by setting up an access token.
@@ -164,14 +167,14 @@ That is a good point, but one that fails in practice. A password change in most 
 
 ### Procedure
 
-1. You gain access to someone's account.
-2. You create an application (using a fake account or the victim's own account, so its not tied back to you)
-3. You setup our app (direct deploy to Heroku)
-4. You configure the app with the application credentials (app id, secret key)
-5. You authenticate the victim's account against the app
-6. You use the application to access the user's account
+1.  You gain access to someone's account.
+2.  You create an application (using a fake account or the victim's own account, so its not tied back to you)
+3.  You setup our app (direct deploy to Heroku)
+4.  You configure the app with the application credentials (app id, secret key)
+5.  You authenticate the victim's account against the app
+6.  You use the application to access the user's account
 
-The account access will continue till the victim checks his/her approved applications. 
+The account access will continue till the victim checks his/her approved applications.
 
 ## Pluggable Notify Daemon for Linux
 
@@ -191,14 +194,14 @@ Keep it pluggable, otherwise its of no use.
 There are quite a lot of Telegram channels that are popping up these days that I really like using.
 Except there are lots of issues with telegram channels:
 
-1. They are inside a closed network by-default. In order to access them you need to use the Telegram client
-2. They are not linkable
-3. No sharability without their client, and even then the content is duplicated.
+1.  They are inside a closed network by-default. In order to access them you need to use the Telegram client
+2.  They are not linkable
+3.  No sharability without their client, and even then the content is duplicated.
 
 The idea is to create a generic website that does these 2 things:
 
-1. Publish an RSS Feed of every telegram channel it knows about.
-2. Provide a direct link for every feed item on the RSS, so users without RSS readers can also browse through the listings.
+1.  Publish an RSS Feed of every telegram channel it knows about.
+2.  Provide a direct link for every feed item on the RSS, so users without RSS readers can also browse through the listings.
 
 Since `web.telegram.org` is taken already by the web client, maybe something like `opentelegram.in` should work fine.
 
@@ -206,9 +209,9 @@ Since `web.telegram.org` is taken already by the web client, maybe something lik
 
 A simple browser extension for web developers that disable local fonts from loading. Alternatively, it raises a grave warning if a web-font was bypassed for a local font. This is helpful if you are a developer:
 
-- And have some specific font installed locally (say Font Awesome)
-- And are developing a website that uses that font locally
-- And forget to include the Font in your stylesheet
+-   And have some specific font installed locally (say Font Awesome)
+-   And are developing a website that uses that font locally
+-   And forget to include the Font in your stylesheet
 
 The page continues to function normally in your development setup, but breaks in production.
 
@@ -234,9 +237,9 @@ This is already handled by the Arch Build System (albeit without Docker). Using 
 
 A bot that posts paper abstracts and links to PDF whenever a paper referencing a research paper is posted to Hacker News. Most scicomm posts that make it to HN almost always have a primary paper reference, and someone ends up posting the paper abstract along with a link to Arxiv or SciHub usually. A bot that automates this for all HN submissions would be a fun project.
 
-*Update*: Someone did this! See [@randomdrake's comments on HN](https://news.ycombinator.com/threads?id=randomdrake).
+_Update_: Someone did this! See [@randomdrake's comments on HN](https://news.ycombinator.com/threads?id=randomdrake).
 
-*Update 2*: The mods are not very happy with the [abstract being posted](https://news.ycombinator.com/item?id=16330366), but the rest should be good.
+_Update 2_: The mods are not very happy with the [abstract being posted](https://news.ycombinator.com/item?id=16330366), but the rest should be good.
 
 For Bonus Points: Include a link to the fermat library URL of the paper (if available).
 
@@ -262,6 +265,34 @@ sqlite to mysql and trying every solution in [this SO question](https://stackove
 [Tachiyomi](https://github.com/inorichi/tachiyomi/) is a Android application written in Kotlin that
 scrapes comics from various web sources. A headless version of it would be great to have, replacing
 projects such as <https://github.com/evilhero/mylar> with something much more stable.
+
+The end goal is something that works as a "minor" (<200L) patch on top of Tachiyomi, and does
+a JVM-desktop build which can be run anywhere. A sample README would look something like:
+
+## tachiyomi-headless
+
+A headless build for [tachiyomi][0] which you can run on your server on a schedule
+to download comics. This downloads the comics in plain images and then converts them
+to CBZ format with metadata intact. A new release is generated for every Tachiyomi release.
+
+Get the latest release from the [releases page][1].
+Download the `tachiyomi-headless.jar` file.
+
+Run it as the following:
+
+    java -jar tachiyomi-headless -c config.yml
+
+Where the `config.yml` file looks like:
+
+```yml
+dir: /home/comics/
+format: cbz
+# All the tachiyomi extensions come pre-loaded
+# https://github.com/inorichi/tachiyomi-extensions
+comics:
+    - http://readcomiconline.to/Comic/Marvel-The-End
+    - https://manga-fox.com/one-piece
+```
 
 ## Licence
 
