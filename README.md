@@ -36,6 +36,7 @@
 -   [Slack Dialer](#slack-dialer)
 -   [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
 -   [Tachiyomi Headless](#tachiyomi-headless) - Comic book scraper for all platforms
+-   [OPML Generator](#opml-generator)
 -   [Licence](#licence)
 
 ## Introduction
@@ -255,7 +256,8 @@ Something that lets you switch your database between SQLite/MySQL/Postgres/... b
 an existing ORM framework to import and export out the correct commands.
 
 The grammar differences in most databases are taken care of by an ORM, and the remainder is just
-switching your ORM to use an existing database as the source of truth.
+switching your ORM to use an existing database as the source of truth. Even a specific variant
+(say SQLite to MySQL) would be great to have.
 
 Thought of this after spending a lot of time trying to migrate my Grafana/Gitea setups from
 sqlite to mysql and trying every solution in [this SO question](https://stackoverflow.com/questions/18671/quick-easy-way-to-migrate-sqlite3-to-mysql).
@@ -293,6 +295,39 @@ comics:
     - http://readcomiconline.to/Comic/Marvel-The-End
     - https://manga-fox.com/one-piece
 ```
+
+# OPML Generator
+
+Simple web tool to generate OPML files to let you use RSS feeds everywhere.
+
+I :heart: RSS because it gives me the control of how to consume and read the content.
+While many services provide you RSS feeds, they do not give you an easy way to export
+a list of things that you follow.
+
+For eg: Every repository on GitHub has a releases RSS feed that you can follow. However,
+you need to follow each one individually. Thankfully, there is a nice spec called OPML
+which is used to pass around lists of RSS feeds.
+
+What if one could generate a OPML feed for:
+
+1.  Releases of repos that you have starred on GitHub
+2.  Authors that you follow on GoodReads
+3.  Bands that you follow on BandCamp
+
+I made a initial working demo recently for the first one, and you can check it at
+<https://opml.bb8.fun>. The source code is at <https://git.captnemo.in/nemo/opml-gen>.
+
+# Bangalore Events List
+
+Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore.
+
+-   Want to keep the name generic to support non-tech events as well
+-   ICS support (WeBuild.sg/cal for demo) is a must-have
+-   (They have a RSS feed as well!)
+
+Domain name suggestions are welcome. Since blr doesn't have a TLD, I was considering using `.events`.
+
+---
 
 ## Licence
 
