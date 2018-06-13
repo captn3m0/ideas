@@ -317,6 +317,8 @@ What if one could generate a OPML feed for:
 I made a initial working demo recently for the first one, and you can check it at
 <https://opml.bb8.fun>. The source code is at <https://git.captnemo.in/nemo/opml-gen>.
 
+Related: https://github.com/RSS-Bridge/rss-bridge
+
 # Bangalore Events List
 
 Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore.
@@ -326,6 +328,8 @@ Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore
 -   (They have a RSS feed as well!)
 
 Domain name suggestions are welcome. Since blr doesn't have a TLD, I was considering using `.events`.
+
+Initial Work: https://github.com/captn3m0/gardencity.events
 
 ---
 
