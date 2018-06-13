@@ -26,7 +26,7 @@
 -   [Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
     -   [But OAuth tokens can be revoked](#but-oauth-tokens-can-be-revoked)
     -   [Procedure](#procedure)
--   [Pluggable Notify Daemon for linux](#notify-daemon-for-linux)
+-   [Pluggable Notify Daemon for linux](#pluggable-notify-daemon-for-linux)
 -   [Telegram Channel to RSS](#telegram-to-rss)
 -   [Disable Local Fonts Extension](#disable-local-fonts-extension)
 -   [Community Browser Extension](communities-browser-extension.md)
