@@ -133,6 +133,22 @@ The idea was to build a zero-knowledge email storage. Kinda like lavabit, with a
 
 Keybase has a cool API. I wonder if its possible to build an actual email service on top of keybase?
 
+The original idea was from before Keybase had a chat feature, and I wanted to build an email service that used keybase to send and receive messages. Would have turned out similar to Keybase Chat.
+
+How I'd approach it today is to use Keybase Social Graph for encrypting emails and make it easier via plugins/extensions. The ideal flow would be:
+
+Use the Keybase Social Graph for encrypting emails and make it easier via plugins/extensions. The ideal flow would be:
+
+1.  Login to GMail
+2.  Compose an email to me@captnemo.in
+3.  Extension pops up: "Hey, looks like this user is on Keybase already as keybase.io/captn3m0. Would you like to encrypt this email?
+4.  If user clicks yes, do a keybase auth and follow the user as well, perhaps? (not sure if possible)
+5.  Also give user an option to "Encrypt all emails sent to users with more than X followers)" or something similar...
+
+Doing the same thing on the receiving side is trickier though, but I like the idea of using Keybase to discover anyone's public keys instead of the standard Web of Trust.
+
+A Keybase plugin for Thunderbird would be similar in scope.
+
 ## Newsletters for GitHub
 
 A lot of github project owners would like to send out newsletters to all of their
