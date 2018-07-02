@@ -37,6 +37,8 @@
 -   [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
 -   [Tachiyomi Headless](#tachiyomi-headless) - Comic book scraper for all platforms
 -   [OPML Generator](#opml-generator)
+-   [Bangalore Events List](#bangalore-events-list)
+-   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss)
 -   [Licence](#licence)
 
 ## Introduction
@@ -346,6 +348,18 @@ Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore
 Domain name suggestions are welcome. Since blr doesn't have a TLD, I was considering using `.events`.
 
 Initial Work: https://github.com/captn3m0/gardencity.events
+
+# Amazon Price Tracker with RSS
+
+There are some nice open source trackers available for Price Tracking Amazon products,
+but I would like to see something that generated an RSS Feed.
+
+This could be built on top of [RSS Bridge](https://github.com/RSS-Bridge/rss-bridge)
+fairly easily. Configuration options would include:
+
+-   Min Price (Only add to feed if price is below X)
+-   Amazon Country/Domain (Use the specific Amazon website)
+-   Item Id
 
 ---
 
