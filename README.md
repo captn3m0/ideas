@@ -361,6 +361,16 @@ fairly easily. Configuration options would include:
 -   Amazon Country/Domain (Use the specific Amazon website)
 -   Item Id
 
+Filed a PR: https://github.com/RSS-Bridge/rss-bridge/pull/741
+
+# OPML Sync
+
+Instead of forcing users to do manual imports of OPML feeds, let them
+auto-subscribe from feeds using a dynamically generated OPML feed. This is not
+a product idea by itself, more of a extension idea for existing RSS Readers.
+
+See related discussion on the [tt-rss forums](https://discourse.tt-rss.org/t/subscribe-to-opml/1230).
+
 ---
 
 ## Licence
