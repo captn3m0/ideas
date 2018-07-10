@@ -113,7 +113,7 @@ The discussion on [HN](https://news.ycombinator.com/item?id=8151271) is also ver
 
 _Update_: There is some progress on the WebExtension porting of Lightspeed, given the recent Firefox updates. With this in place, it should be relatively easier to port the webextension version to Chrome itself.
 
-_Update_: @tallpants made this: https://github.com/tallpants/lightspeed
+_Update_: [@tallpants](https://github.com/tallpants) made this: https://github.com/tallpants/lightspeed
 
 ## Facebook Analytics
 
