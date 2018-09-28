@@ -1,4 +1,4 @@
-# Green/Yellow Pages
+# Green/Yellow Pages :gift:
 
 A distributed directory for spam reports.
 
@@ -11,8 +11,8 @@ it is a reverse-yellow-pages directory to avoid spam calls.
 
 To solve this:
 
-1. You need a way to check a number against a known spam list.
-2. You need the check to be as fast as possible.
+1.  You need a way to check a number against a known spam list.
+2.  You need the check to be as fast as possible.
 
 If you want to beat TrueCaller, this check should be completely offline,
 to present a significant advantage.
@@ -21,12 +21,12 @@ to present a significant advantage.
 
 The API has 2 endpoints:
 
-1. Register a number as spam.
-2. Check a number and get a YES/NO spam response.
+1.  Register a number as spam.
+2.  Check a number and get a YES/NO spam response.
 
 ## Spam registration
 
-To prevent abuse, you want the client to do some 
+To prevent abuse, you want the client to do some
 proof of work before _each_ submission. Publish
 a hash of the input number in a ledger.
 
@@ -61,7 +61,7 @@ The above-mentioned ledger is an easy way of
 ensuring verified sync with any other party
 that wants to maintain the same data store.
 
-This is not a very robust solution, and an 
+This is not a very robust solution, and an
 ideal solution would be to let the client
 publish on the ledger, and everyone
 can just pick up from the ledger.
@@ -133,7 +133,7 @@ but that doesn't sound like a good idea.
 
 However, the mere fact that a phone
 number is in the ledger isn't
-as important as *when* it was added.
+as important as _when_ it was added.
 
 A client should ideally add a random
 delay (to the tune of hours) and batch
@@ -180,9 +180,9 @@ done in a distributed manner though.
 
 # Cost of Computation
 
-- Verification should be fast
-- Insertions should be slow
-- Client registrations should be costly
+-   Verification should be fast
+-   Insertions should be slow
+-   Client registrations should be costly
 
 By costly, I mean the compute price, not monetary.
 A nice way to equalize this would be to make
@@ -196,14 +196,15 @@ there are better ideas, though.
 
 # Terms
 
-*Directory*: The actual data store holding a "Yes/No" filter of whether a number is spammy or not.
-*Ledger*: A blockchain or ditributed log that maintains any reports.
+_Directory_: The actual data store holding a "Yes/No" filter of whether a number is spammy or not.
+_Ledger_: A blockchain or ditributed log that maintains any reports.
 
 ## References
-- You should totally read [Falsehoods Programmers Believe About Phone Numbers](https://github.com/googlei18n/libphonenumber/blob/master/FALSEHOODS.md)
-- [bitly/dablooms](https://github.com/bitly/dablooms) - an attempt by bitly to solve spam problems with a layered bloom filter which is countable as well
-- [scalable bloom filters](https://www.sciencedirect.com/science/article/pii/S0020019006003127)
-- [A multi-layer bloom filter for duplicated URL detection](http://ieeexplore.ieee.org/document/5578947/?reload=true)
+
+-   You should totally read [Falsehoods Programmers Believe About Phone Numbers](https://github.com/googlei18n/libphonenumber/blob/master/FALSEHOODS.md)
+-   [bitly/dablooms](https://github.com/bitly/dablooms) - an attempt by bitly to solve spam problems with a layered bloom filter which is countable as well
+-   [scalable bloom filters](https://www.sciencedirect.com/science/article/pii/S0020019006003127)
+-   [A multi-layer bloom filter for duplicated URL detection](http://ieeexplore.ieee.org/document/5578947/?reload=true)
 
 [solomon]: https://en.wikipedia.org/wiki/Telephone_numbers_in_the_Solomon_Islands
 [res]: http://ieeexplore.ieee.org/document/5578947/?reload=true

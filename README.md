@@ -208,7 +208,7 @@ for each of them. (GMail notifications might open your mail client if you click 
 
 Keep it pluggable, otherwise its of no use.
 
-## Telegram To RSS
+## Telegram To RSS :gift:
 
 There are quite a lot of Telegram channels that are popping up these days that I really like using.
 Except there are lots of issues with telegram channels:
@@ -262,11 +262,13 @@ _Update 2_: The mods are not very happy with the [abstract being posted](https:/
 
 For Bonus Points: Include a link to the fermat library URL of the paper (if available).
 
-# Slack Dialer
+# Slack Dialer :gift:
 
 All of our company has contact numbers added on Slack, but it is cumbersome to find someone's profile on Slack. A simple dialer application that does OAuth-verification on your Slack profile to get a list of the entire organization, and present a simple dialer for all the people who have contact details added.
 
 Interface would be a simple grid of faces, click to dial, sorted by frequency. A simple search-as-you-type box at the top. Can also be done as a PWA to easily make it cross-platform.
+
+Note that this requires a Slack team with a paid account. I'll help you get a trial so you can build this.
 
 # Database Conversion Toolkit using an ORM
 
@@ -280,7 +282,7 @@ switching your ORM to use an existing database as the source of truth. Even a sp
 Thought of this after spending a lot of time trying to migrate my Grafana/Gitea setups from
 sqlite to mysql and trying every solution in [this SO question](https://stackoverflow.com/questions/18671/quick-easy-way-to-migrate-sqlite3-to-mysql).
 
-# Tachiyomi Headless
+# Tachiyomi Headless :gift:
 
 [Tachiyomi](https://github.com/inorichi/tachiyomi/) is a Android application written in Kotlin that
 scrapes comics from various web sources. A headless version of it would be great to have, replacing
@@ -337,7 +339,7 @@ I made a initial working demo recently for the first one, and you can check it a
 
 Related: https://github.com/RSS-Bridge/rss-bridge
 
-# Bangalore Events List
+# Bangalore Events List :gift:
 
 Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore.
 
