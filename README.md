@@ -39,6 +39,7 @@
 -   [OPML Generator](#opml-generator)
 -   [Bangalore Events List](#bangalore-events-list)
 -   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss)
+-   [Sanskari Proxy](#sanskari-proxy)
 -   [Licence](#licence)
 
 ## Introduction
@@ -372,6 +373,20 @@ auto-subscribe from feeds using a dynamically generated OPML feed. This is not
 a product idea by itself, more of a extension idea for existing RSS Readers.
 
 See related discussion on the [tt-rss forums](https://discourse.tt-rss.org/t/subscribe-to-opml/1230).
+
+# Sanskari Proxy
+
+A lot of Indian Government websites are inaccessible on the public internet, because
+they geo-fence it to within Indian Boundaries. I made a list of all [Indian Government
+Websites](https://git.captnemo.in/nemo/pulse/src/branch/master/domains.csv), and the idea
+is to make a Indian Proxy service that specifically works only for the Geo-fenced Indian GoI
+websites.
+
+For eg, if `uidai.gov.in` is inaccessible, hitting `uidai.gov.sanskariproxy.in` will get you
+the same result, proxied via our servers.
+
+This is not intended to be used for actual usage, just research purposes. Will help make the
+UIDAI (and other GoI) websites accessible to a much larger community.
 
 ---
 
