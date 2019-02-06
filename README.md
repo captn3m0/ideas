@@ -40,7 +40,7 @@
 -   [Bangalore Events List](#bangalore-events-list)
 -   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss)
 -   [Sanskari Proxy](#sanskari-proxy)
--   [Helm Charts for Self-Hosting](#helm-charts-for-selfhosting)
+-   [Helm Charts for Self-Hosting](#helm-charts-for-self-hosting)
 -   [Licence](#licence)
 
 ## Introduction
