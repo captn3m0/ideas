@@ -40,13 +40,18 @@
 -   [Bangalore Events List](#bangalore-events-list)
 -   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss)
 -   [Sanskari Proxy](#sanskari-proxy)
+-   [Helm Charts for Self-Hosting](#helm-charts-for-selfhosting)
 -   [Licence](#licence)
 
 ## Introduction
 
 This is a open repository of personal ideas. Some of these are based on personal interactions, bug reports, and discussions I've had with lots of people. I've tried to give credit wherever possible. I also try to reference similar/existing projects that might relate to the idea, so if you know of something that is interesting in that space, file a PR or send me a link.
 
+The ones marked with a :gift: will get you a personal postcard from me (and possibly more).
+
 ## OpenBook
+
+*Edit*: Lots of marketing companies already have built this, but not in the creepy way that I'd have liked.
 
 This is a privacy-awareness application that relies on the TrueCaller data-sharing model. It is meant to teach users that their privacy is not in their hands, but in the hands of those that they trust.
 
@@ -366,6 +371,8 @@ fairly easily. Configuration options would include:
 
 Filed a PR: https://github.com/RSS-Bridge/rss-bridge/pull/741
 
+(While the above is merged, this doesn't correctly work because it doesn't cache the information properly).
+
 # OPML Sync
 
 Instead of forcing users to do manual imports of OPML feeds, let them
@@ -387,6 +394,13 @@ the same result, proxied via our servers.
 
 This is not intended to be used for actual usage, just research purposes. Will help make the
 UIDAI (and other GoI) websites accessible to a much larger community.
+
+# Helm Charts for Self-Hosting
+
+I self-host a lot of my services, and it would be great to take my existing services, and convert them
+to compatible Helm Charts that others can re-use. Basically: Helm Charts for Self-Hosting.
+
+The input for these would be the terraform code at https://git.captnemo.in/nemo/nebula
 
 ---
 
