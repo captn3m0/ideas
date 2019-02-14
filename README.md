@@ -41,6 +41,7 @@
 -   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss)
 -   [Sanskari Proxy](#sanskari-proxy)
 -   [Helm Charts for Self-Hosting](#helm-charts-for-self-hosting)
+-   [Fake Paytm Payment](#fake-payment-payment)
 -   [Licence](#licence)
 
 ## Introduction
@@ -51,7 +52,7 @@ The ones marked with a :gift: will get you a personal postcard from me (and poss
 
 ## OpenBook
 
-*Edit*: Lots of marketing companies already have built this, but not in the creepy way that I'd have liked.
+_Edit_: Lots of marketing companies already have built this, but not in the creepy way that I'd have liked.
 
 This is a privacy-awareness application that relies on the TrueCaller data-sharing model. It is meant to teach users that their privacy is not in their hands, but in the hands of those that they trust.
 
@@ -401,6 +402,18 @@ I self-host a lot of my services, and it would be great to take my existing serv
 to compatible Helm Charts that others can re-use. Basically: Helm Charts for Self-Hosting.
 
 The input for these would be the terraform code at https://git.captnemo.in/nemo/nebula
+
+# Fake Paytm Payment
+
+A fake webapp that goes fullscreen and does the following:
+
+1. Has a QR Code Scanner and OCR Scanner that scans Paytm QR Codes
+2. Lets users enters any amount
+3. And gives a green check to say that the payment was successful.
+
+Why: To demonstrate to Paytm that they need to educate their merchants better about authenticating payments.
+
+Likely illegal to distribute though.
 
 ---
 
