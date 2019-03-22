@@ -55,7 +55,7 @@ This is a open repository of personal ideas. Some of these are based on personal
 
 ## OpenBook
 
-Some ideas are annotated with emojies:
+Some ideas are annotated with emojis:
 
 -   :sparkles: - Favorite Ideas. I really like this, and you could possible build a company of some of these.
 -   :hankey: - Not all ideas are great. These are things I thought might work at one point, but no longer consider worth building. I don't remove such ideas from the repo, because I think all ideas are worth learning from.
@@ -65,7 +65,9 @@ Some ideas are annotated with emojies:
 
 All of the above are just indicative. Make something people want is the YC motto, but sometimes you must make something for no good reason other than "just because".
 
-## OpenBook :hankey:
+## OpenBook
+
+:hankey:
 
 _Edit_: Lots of marketing companies already have built this, but not in the creepy way that I'd have liked.
 
@@ -113,7 +115,9 @@ A profile creation page allows you to specify as much information as you have on
 
 Once a profile has been created, we will continuously long-poll the service to fetch new information as and when it becomes available. Real-time notifications are delivered to you as the person's activity is tracked.
 
-## Collaborative Bookmarking :sparkes: :gift:
+## Collaborative Bookmarking
+
+:sparkes: :gift:
 
 There are a dozen bookmarking services out there, many of them quite well done. However, most services are focused on the idea that bookmarking is a lone-person habit, which someone does in isolation.
 
@@ -125,7 +129,9 @@ Bookmarking for Teams, in essence. Some good alternatives are [listed in this qu
 I've described this idea somewhat better in a chat log at [collaborative-bookmark.md](collaborative-bookmark.md)
 Google Spaces did some nice work here, but the product was shut down within an year of launch.
 
-## Lightspeed for Chrome :rocket:
+## Lightspeed for Chrome
+
+:rocket:
 
 [Lightspeed](https://www.youtube.com/watch?v=wLnSLFrQDG8) is an experimental UI design (not implemented) for Firefox that focuses on making the New Tab page more functional by giving the browser a decent way to search across bookmarks, open tabs, and history.
 
@@ -147,7 +153,9 @@ A recommendation engine built on top of my facebook data is a good idea, I think
 
 Workflowy is a cool tool that I use for note-taking. It allows infinitely nested lists with @mention and #hashtag support. One thing it lacks currently is API for me to access my own data. I think workflowy is a great tool that could become a lot better if there were a way for developers to hook into it. (For example using workflowy as a data-backend for a todo-app).
 
-## Lettersafe :hankey:
+## Lettersafe
+
+:hankey:
 
 My notes for lettersafe are on [workflowy](https://workflowy.com/s/5439f7a9-3762-f247-3e96-4d047b5d4ce0).
 
@@ -173,7 +181,9 @@ Doing the same thing on the receiving side is trickier though, but I like the id
 
 A Keybase plugin for Thunderbird would be similar in scope.
 
-## Newsletters for GitHub :rocket:
+## Newsletters for GitHub
+
+:rocket:
 
 A lot of github project owners would like to send out newsletters to all of their
 stargazers. However, GitHub doesn't provide anything for that. An easy way would
@@ -198,7 +208,9 @@ _Update_: GitHub now supports [watching releases](https://github.blog/changelog/
 
 There are lots of related projects in this thread: https://github.com/isaacs/github/issues/410
 
-## Hacking via OAauth tokens :rocket:
+## Hacking via OAauth tokens
+
+:rocket:
 
 While pen-testing, once you've gained access to the target, it is often necessary to install a backdoor to mantain the access. While this is easily done in case of root access to the machine, this is not that easy if the target is an email account, lets say.
 
@@ -236,7 +248,9 @@ for each of them. (GMail notifications might open your mail client if you click 
 
 Keep it pluggable, otherwise its of no use.
 
-## Telegram To RSS :gift: :sparkles:
+## Telegram To RSS
+
+:gift: :sparkles:
 
 There are quite a lot of Telegram channels that are popping up these days that I really like using.
 Except there are lots of issues with telegram channels:
@@ -263,7 +277,9 @@ of difference in that this doesn't require perission from the channel admins any
 
 You could likely get this sponsored from the Internet Archive if you get something up and running.
 
-## Disable Local Fonts Extension :gift:
+## Disable Local Fonts Extension
+
+:gift:
 
 A simple browser extension for web developers that disable local fonts from loading. Alternatively, it raises a grave warning if a web-font was bypassed for a local font. This is helpful if you are a developer:
 
@@ -325,7 +341,9 @@ sqlite to mysql and trying every solution in [this SO question](https://stackove
 
 There are some closed solutions to this, but would like a open-source solution that does this well.
 
-## Tachiyomi Headless :gift:
+## Tachiyomi Headless
+
+:gift:
 
 [Tachiyomi](https://github.com/inorichi/tachiyomi/) is a Android application written in Kotlin that
 scrapes comics from various web sources. A headless version of it would be great to have, replacing
@@ -357,7 +375,9 @@ comics:
     - https://manga-fox.com/one-piece
 ```
 
-## OPML Generator :rocket:
+## OPML Generator
+
+:rocket:
 
 Simple web tool to generate OPML files to let you use RSS feeds everywhere.
 
@@ -380,7 +400,9 @@ What if one could generate a OPML feed for:
 
 Related: https://github.com/RSS-Bridge/rss-bridge (I have contributed a few bridges to this)
 
-## Bangalore Events List :gift: :construction:
+## Bangalore Events List
+
+:gift: :construction:
 
 Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore.
 
@@ -392,7 +414,9 @@ Domain name suggestions are welcome. Since blr doesn't have a TLD, I was conside
 
 Initial Work: https://github.com/captn3m0/gardencity.events There is also some work from @tallpants on this at <https://github.com/tallpants/meetup2ics/>
 
-## Amazon Price Tracker with RSS :rocket:
+## Amazon Price Tracker with RSS
+
+:rocket:
 
 There are some nice open source trackers available for Price Tracking Amazon products,
 but I would like to see something that generated an RSS Feed.
@@ -416,7 +440,9 @@ a product idea by itself, more of a extension idea for existing RSS Readers.
 
 See related discussion on the [tt-rss forums](https://discourse.tt-rss.org/t/subscribe-to-opml/1230).
 
-## Sanskari Proxy :gift: :sparkles:
+## Sanskari Proxy
+
+:gift: :sparkles:
 
 A lot of Indian Government websites are inaccessible on the public internet, because
 they geo-fence it to within Indian Boundaries. I made a list of all [Indian Government
@@ -449,7 +475,9 @@ Why: To demonstrate to Paytm that they need to educate their merchants better ab
 
 :warning: **Likely illegal to distribute.**
 
-## Automated Personal Finance :sparkles:
+## Automated Personal Finance
+
+:sparkles:
 
 A personal finance application that tracks things automatically, but saves all data on your systems.
 
@@ -482,7 +510,9 @@ If I were to try it again, I'd ensure a few things:
 2.  Cross platform, but I'd priritize Mac if necessary.
 3.  Save all data in [plaintextaccount](https://plaintextaccounting.org) compatible files. This would let people use other tools on top of this.
 
-## UPI on Desktop :sparkles:
+## UPI on Desktop
+
+:sparkles:
 
 A clean-room reverse engineered implementation of the NPCI Common Library.
 
