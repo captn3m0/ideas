@@ -60,6 +60,8 @@ Some ideas are annotated with emojies:
 -   :sparkles: - Favorite Ideas. I really like this, and you could possible build a company of some of these.
 -   :hankey: - Not all ideas are great. These are things I thought might work at one point, but no longer consider worth building. I don't remove such ideas from the repo, because I think all ideas are worth learning from.
 -   :gift: - I'd love to help you build this, consider this like a bounty. You'll get a personal postcard from me for building something on this list.
+-   :rocket: Someone (might be be) built this!
+-   :construction: There is a work-in-progress implementation.
 
 All of the above are just indicative. Make something people want is the YC motto, but sometimes you must make something for no good reason other than "just because".
 
