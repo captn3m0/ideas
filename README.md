@@ -430,14 +430,14 @@ the same result, proxied via our servers.
 This is not intended to be used for actual usage, just research purposes. Will help make the
 UIDAI (and other GoI) websites accessible to a much larger community.
 
-# Helm Charts for Self-Hosting
+## Helm Charts for Self-Hosting
 
 I self-host a lot of my services, and it would be great to take my existing services, and convert them
 to compatible Helm Charts that others can re-use. Basically: Helm Charts for Self-Hosting.
 
 The input for these would be the terraform code at https://git.captnemo.in/nemo/nebula
 
-# Fake Paytm Payment
+## Fake Paytm Payment
 
 A fake webapp that goes fullscreen and does the following:
 
@@ -447,7 +447,7 @@ A fake webapp that goes fullscreen and does the following:
 
 Why: To demonstrate to Paytm that they need to educate their merchants better about authenticating payments.
 
-# Likely illegal to distribute though.
+:warning: **Likely illegal to distribute.**
 
 ## Automated Personal Finance :sparkles:
 
