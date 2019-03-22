@@ -4,42 +4,47 @@
 
 **Table of Contents**
 
--   [NoFollow Enforcer](nofollow.md)
+-   [Introduction](#introduction)
+-   [NoFollow Enforcer](nofollow.md) :hankey:
 -   [PyPi Notifier](pypi-notifier.md)
--   [OpenBook](#openbook)
+-   [OpenBook](#openbook) :hankey:
     -   [Expectations](#expectations)
     -   [Features](#features)
     -   [Interface](#interface)
     -   [Backend](#backend)
--   [iStalk](#istalk)
+-   [iStalk](#istalk) :hankey:
     -   [Idea](#idea)
     -   [Interface](#interface-1)
--   [Distributed Privacy conscious TrueCaller Alternative](yellow-pages.md)
--   [Collaborative Bookmarking](#collaborative-bookmarking)
--   [Lightspeed for Chrome](#lightspeed-for-chrome)
+-   [Distributed Privacy conscious TrueCaller Alternative](yellow-pages.md) :sparkles: :gift:
+-   [Collaborative Bookmarking](#collaborative-bookmarking) :sparkles: :gift:
+-   [Lightspeed for Chrome](#lightspeed-for-chrome) :rocket:
 -   [Facebook Analytics](#facebook-analytics)
 -   [API for Workflowy](#api-for-workflowy)
 -   [Onion Cannon](onioncannon.md) (E2E encrypted communication for machines)
--   ~~[Lettersafe](#lettersafe)~~
+-   ~~[Lettersafe](#lettersafe) :hankey:~~
 -   [Email on top of keybase](#email-on-top-of-keybase)
--   [Newsletters for GitHub](#newsletters-for-github)
--   [Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
+-   [Newsletters for GitHub](#newsletters-for-github) :rocket:
+-   [Hacking via OAauth tokens](#hacking-via-oaauth-tokens) :rocket:
     -   [But OAuth tokens can be revoked](#but-oauth-tokens-can-be-revoked)
     -   [Procedure](#procedure)
 -   [Pluggable Notify Daemon for linux](#pluggable-notify-daemon-for-linux)
--   [Telegram Channel to RSS](#telegram-to-rss)
--   [Disable Local Fonts Extension](#disable-local-fonts-extension)
--   [Community Browser Extension](communities-browser-extension.md)
+-   [Telegram Channel to RSS](#telegram-to-rss) :gift: :sparkles:
+-   [Disable Local Fonts Extension](#disable-local-fonts-extension) :gift:
+-   [Community Browser Extension](communities-browser-extension.md) :gift:
 -   [Card Game Modelling (Research)](card-game-modelling.md)
 -   [Arch Linux Package Build System](#arch-linux-package-build-system)
 -   [Hacker News Research Bot](#hacker-news-research-bot)
--   [Slack Dialer](#slack-dialer)
+-   [Slack Dialer](#slack-dialer) :construction:
 -   [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
 -   [Tachiyomi Headless](#tachiyomi-headless) - Comic book scraper for all platforms
--   [OPML Generator](#opml-generator)
--   [Bangalore Events List](#bangalore-events-list)
--   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss)
--   [Sanskari Proxy](#sanskari-proxy)
+-   [OPML Generator](#opml-generator) :rocket:
+-   [Bangalore Events List](#bangalore-events-list) :construction:
+-   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss) :rocket:
+-   [OPML Sync](#opml-sync)
+-   [Database Conversion Toolkit using an ORM](#database-conversion-toolkit-using-an-orm)
+-   [Sanskari Proxy](#sanskari-proxy) :gift: :sparkles:
+-   [Automated Personal Finance](#automated-personal-finance) :sparkles:
+-   [UPI On Desktop](#upi-on-desktop) :sparkles:
 -   [Helm Charts for Self-Hosting](#helm-charts-for-self-hosting)
 -   [Fake Paytm Payment](#fake-payment-payment)
 -   [Licence](#licence)
@@ -48,9 +53,17 @@
 
 This is a open repository of personal ideas. Some of these are based on personal interactions, bug reports, and discussions I've had with lots of people. I've tried to give credit wherever possible. I also try to reference similar/existing projects that might relate to the idea, so if you know of something that is interesting in that space, file a PR or send me a link.
 
-The ones marked with a :gift: will get you a personal postcard from me (and possibly more).
-
 ## OpenBook
+
+Some ideas are annotated with emojies:
+
+-   :sparkles: - Favorite Ideas. I really like this, and you could possible build a company of some of these.
+-   :hankey: - Not all ideas are great. These are things I thought might work at one point, but no longer consider worth building. I don't remove such ideas from the repo, because I think all ideas are worth learning from.
+-   :gift: - I'd love to help you build this, consider this like a bounty. You'll get a personal postcard from me for building something on this list.
+
+All of the above are just indicative. Make something people want is the YC motto, but sometimes you must make something for no good reason other than "just because".
+
+## OpenBook :hankey:
 
 _Edit_: Lots of marketing companies already have built this, but not in the creepy way that I'd have liked.
 
@@ -82,7 +95,7 @@ Unlike facebook, which can directly access _any data_ on their servers, we are l
 
 This idea probably breaks lots of point in Facebook's ToS, but that doesn't mean it can't be built.
 
-## iStalk
+## iStalk :hankey:
 
 This is essentially a unified profile mechanism, where a user's identity is defined by all of their activity on various networks. While this has some cool sub-ideas (like correlating activity between various networks), the most important implication that arises is that it can be a perfect tool for stalking. However, you can easily add in consent from the original profile owner to clear that concern.
 
@@ -98,7 +111,7 @@ A profile creation page allows you to specify as much information as you have on
 
 Once a profile has been created, we will continuously long-poll the service to fetch new information as and when it becomes available. Real-time notifications are delivered to you as the person's activity is tracked.
 
-## Collaborative Bookmarking
+## Collaborative Bookmarking :sparkes: :gift:
 
 There are a dozen bookmarking services out there, many of them quite well done. However, most services are focused on the idea that bookmarking is a lone-person habit, which someone does in isolation.
 
@@ -110,7 +123,7 @@ Bookmarking for Teams, in essence. Some good alternatives are [listed in this qu
 I've described this idea somewhat better in a chat log at [collaborative-bookmark.md](collaborative-bookmark.md)
 Google Spaces did some nice work here, but the product was shut down within an year of launch.
 
-## Lightspeed for Chrome
+## Lightspeed for Chrome :rocket:
 
 [Lightspeed](https://www.youtube.com/watch?v=wLnSLFrQDG8) is an experimental UI design (not implemented) for Firefox that focuses on making the New Tab page more functional by giving the browser a decent way to search across bookmarks, open tabs, and history.
 
@@ -132,7 +145,7 @@ A recommendation engine built on top of my facebook data is a good idea, I think
 
 Workflowy is a cool tool that I use for note-taking. It allows infinitely nested lists with @mention and #hashtag support. One thing it lacks currently is API for me to access my own data. I think workflowy is a great tool that could become a lot better if there were a way for developers to hook into it. (For example using workflowy as a data-backend for a todo-app).
 
-## Lettersafe
+## Lettersafe :hankey:
 
 My notes for lettersafe are on [workflowy](https://workflowy.com/s/5439f7a9-3762-f247-3e96-4d047b5d4ce0).
 
@@ -158,7 +171,7 @@ Doing the same thing on the receiving side is trickier though, but I like the id
 
 A Keybase plugin for Thunderbird would be similar in scope.
 
-## Newsletters for GitHub
+## Newsletters for GitHub :rocket:
 
 A lot of github project owners would like to send out newsletters to all of their
 stargazers. However, GitHub doesn't provide anything for that. An easy way would
@@ -179,7 +192,11 @@ And finally, this should automatically subscribe you to any new GitHub releases 
 any project you have starred. This is a missing feature that I think can be best
 implemented by a third-party for now.
 
-## Hacking via OAauth tokens
+_Update_: GitHub now supports [watching releases](https://github.blog/changelog/2018-11-27-watch-releases/).
+
+There are lots of related projects in this thread: https://github.com/isaacs/github/issues/410
+
+## Hacking via OAauth tokens :rocket:
 
 While pen-testing, once you've gained access to the target, it is often necessary to install a backdoor to mantain the access. While this is easily done in case of root access to the machine, this is not that easy if the target is an email account, lets say.
 
@@ -202,6 +219,8 @@ That is a good point, but one that fails in practice. A password change in most 
 
 The account access will continue till the victim checks his/her approved applications.
 
+:rocket: I made this: <https://github.com/captn3m0/amon>
+
 ## Pluggable Notify Daemon for Linux
 
 Not another window manager daemon, because lots of them already exist and there
@@ -215,7 +234,7 @@ for each of them. (GMail notifications might open your mail client if you click 
 
 Keep it pluggable, otherwise its of no use.
 
-## Telegram To RSS :gift:
+## Telegram To RSS :gift: :sparkles:
 
 There are quite a lot of Telegram channels that are popping up these days that I really like using.
 Except there are lots of issues with telegram channels:
@@ -231,7 +250,18 @@ The idea is to create a generic website that does these 2 things:
 
 Since `web.telegram.org` is taken already by the web client, maybe something like `opentelegram.in` should work fine.
 
-## Disable Local Fonts Extension
+There are a few related paid projects, but they all rely on the Telegram Bot API:
+
+-   https://news.ycombinator.com/item?id=17617675
+-   http://tele.ga/about.html
+
+The issue with using the bot API is that bots need to be explicitly invited
+to channels, while users can join channels on their own. This makes a world
+of difference in that this doesn't require perission from the channel admins anymore.
+
+You could likely get this sponsored from the Internet Archive if you get something up and running.
+
+## Disable Local Fonts Extension :gift:
 
 A simple browser extension for web developers that disable local fonts from loading. Alternatively, it raises a grave warning if a web-font was bypassed for a local font. This is helpful if you are a developer:
 
@@ -269,13 +299,15 @@ _Update 2_: The mods are not very happy with the [abstract being posted](https:/
 
 For Bonus Points: Include a link to the fermat library URL of the paper (if available).
 
-# Slack Dialer :gift:
+# Slack Dialer :gift: :construction:
 
 All of our company has contact numbers added on Slack, but it is cumbersome to find someone's profile on Slack. A simple dialer application that does OAuth-verification on your Slack profile to get a list of the entire organization, and present a simple dialer for all the people who have contact details added.
 
 Interface would be a simple grid of faces, click to dial, sorted by frequency. A simple search-as-you-type box at the top. Can also be done as a PWA to easily make it cross-platform.
 
 Note that this requires a Slack team with a paid account. I'll help you get a trial so you can build this.
+
+:construction: <https://github.com/captn3m0/slack-dialer>
 
 # Database Conversion Toolkit using an ORM
 
@@ -289,7 +321,9 @@ switching your ORM to use an existing database as the source of truth. Even a sp
 Thought of this after spending a lot of time trying to migrate my Grafana/Gitea setups from
 sqlite to mysql and trying every solution in [this SO question](https://stackoverflow.com/questions/18671/quick-easy-way-to-migrate-sqlite3-to-mysql).
 
-# Tachiyomi Headless :gift:
+There are some closed solutions to this, but would like a open-source solution that does this well.
+
+## Tachiyomi Headless :gift:
 
 [Tachiyomi](https://github.com/inorichi/tachiyomi/) is a Android application written in Kotlin that
 scrapes comics from various web sources. A headless version of it would be great to have, replacing
@@ -297,8 +331,6 @@ projects such as <https://github.com/evilhero/mylar> with something much more st
 
 The end goal is something that works as a "minor" (<200L) patch on top of Tachiyomi, and does
 a JVM-desktop build which can be run anywhere. A sample README would look something like:
-
-## tachiyomi-headless
 
 A headless build for [tachiyomi][0] which you can run on your server on a schedule
 to download comics. This downloads the comics in plain images and then converts them
@@ -323,7 +355,7 @@ comics:
     - https://manga-fox.com/one-piece
 ```
 
-# OPML Generator
+## OPML Generator :rocket:
 
 Simple web tool to generate OPML files to let you use RSS feeds everywhere.
 
@@ -341,12 +373,12 @@ What if one could generate a OPML feed for:
 2.  Authors that you follow on GoodReads
 3.  Bands that you follow on BandCamp
 
-I made a initial working demo recently for the first one, and you can check it at
+:rocket: I made a initial working demo recently for the first one, and you can check it at
 <https://opml.bb8.fun>. The source code is at <https://git.captnemo.in/nemo/opml-gen>.
 
-Related: https://github.com/RSS-Bridge/rss-bridge
+Related: https://github.com/RSS-Bridge/rss-bridge (I have contributed a few bridges to this)
 
-# Bangalore Events List :gift:
+## Bangalore Events List :gift: :construction:
 
 Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore.
 
@@ -356,9 +388,9 @@ Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore
 
 Domain name suggestions are welcome. Since blr doesn't have a TLD, I was considering using `.events`.
 
-Initial Work: https://github.com/captn3m0/gardencity.events
+Initial Work: https://github.com/captn3m0/gardencity.events There is also some work from @tallpants on this at <https://github.com/tallpants/meetup2ics/>
 
-# Amazon Price Tracker with RSS
+## Amazon Price Tracker with RSS :rocket:
 
 There are some nice open source trackers available for Price Tracking Amazon products,
 but I would like to see something that generated an RSS Feed.
@@ -370,11 +402,11 @@ fairly easily. Configuration options would include:
 -   Amazon Country/Domain (Use the specific Amazon website)
 -   Item Id
 
-Filed a PR: https://github.com/RSS-Bridge/rss-bridge/pull/741
+:rocket: https://github.com/RSS-Bridge/rss-bridge/pull/741
 
 (While the above is merged, this doesn't correctly work because it doesn't cache the information properly).
 
-# OPML Sync
+## OPML Sync
 
 Instead of forcing users to do manual imports of OPML feeds, let them
 auto-subscribe from feeds using a dynamically generated OPML feed. This is not
@@ -382,7 +414,7 @@ a product idea by itself, more of a extension idea for existing RSS Readers.
 
 See related discussion on the [tt-rss forums](https://discourse.tt-rss.org/t/subscribe-to-opml/1230).
 
-# Sanskari Proxy
+## Sanskari Proxy :gift: :sparkles:
 
 A lot of Indian Government websites are inaccessible on the public internet, because
 they geo-fence it to within Indian Boundaries. I made a list of all [Indian Government
@@ -407,13 +439,64 @@ The input for these would be the terraform code at https://git.captnemo.in/nemo/
 
 A fake webapp that goes fullscreen and does the following:
 
-1. Has a QR Code Scanner and OCR Scanner that scans Paytm QR Codes
-2. Lets users enters any amount
-3. And gives a green check to say that the payment was successful.
+1.  Has a QR Code Scanner and OCR Scanner that scans Paytm QR Codes
+2.  Lets users enters any amount
+3.  And gives a green check to say that the payment was successful.
 
 Why: To demonstrate to Paytm that they need to educate their merchants better about authenticating payments.
 
-Likely illegal to distribute though.
+# Likely illegal to distribute though.
+
+## Automated Personal Finance :sparkles:
+
+A personal finance application that tracks things automatically, but saves all data on your systems.
+
+A overwhelmingly large percentage of my finances are online or tracked somewhere digitally. What is ditigal can be automated, but without any of the SMS-sniffing applications that currently clutter the market. The idea is to have a simple cross-platform application that:
+
+1.  Embeds a web-browser that lets you login to various online services.
+2.  Scrapes the order/payment history from these sites regularly.
+3.  And provides you with monthly budget/finance history that you can use to track your spending.
+
+For bonus points, figure out a way to track card expenditure. The very minimum services required would be:
+
+1.  Uber (Has an API)
+2.  Splitwise (Has a API)
+3.  Paytm (Doesn't have API, but the website backend is very much a API)
+4.  Amazon
+
+I've tried something similar before: [captn3m0/gringotts](https://github.com/captn3m0/gringotts), but I made a few mistakes:
+
+1.  Made it a ruby-command line application.
+2.  Made it output YAML.
+
+A few related projects:
+
+-   [Praseetha-KR/billfold](https://github.com/Praseetha-KR/billfold)
+-   [alexjv89/cashflowy](https://github.com/alexjv89/cashflowy) - Might be worth using this as core.
+
+If I were to try it again, I'd ensure a few things:
+
+1.  GUI first, with a great UX.
+2.  Cross platform, but I'd priritize Mac if necessary.
+3.  Save all data in [plaintextaccount](https://plaintextaccounting.org) compatible files. This would let people use other tools on top of this.
+
+## UPI on Desktop :sparkles:
+
+A clean-room reverse engineered implementation of the NPCI Common Library.
+
+Every UPI-supported app works using the NPCI Common Library, which takes care of some crucial details:
+
+-   MPIN Entry
+-   Debit Card Entry for first time registration
+
+Before encrypting those and passing them to the application code.
+
+This project envisions to reverse-engineer the NPCI Common Library. This would let people:
+
+-   Build Desktop implementation of any UPI Application
+-   Build BHIM on older devices
+
+This is a necessary step, but not the final step since that would be reversing the web APIs that common UPI apps use.
 
 ---
 

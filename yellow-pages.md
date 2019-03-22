@@ -1,4 +1,4 @@
-# Green/Yellow Pages :gift:
+# Green/Yellow Pages :gift: :sparkles:
 
 A distributed directory for spam reports.
 
