@@ -475,6 +475,8 @@ Why: To demonstrate to Paytm that they need to educate their merchants better ab
 
 :warning: **Likely illegal to distribute.**
 
+There are two such apps available. Since they are based on the older UI scheme. I have also worked and currently working on one such app and Modified PayTm client APK. Details in PR description.
+
 ## Automated Personal Finance
 
 :sparkles:
