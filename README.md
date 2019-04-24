@@ -475,6 +475,8 @@ Why: To demonstrate to Paytm that they need to educate their merchants better ab
 
 :warning: **Likely illegal to distribute.**
 
+Update: There are already two such apps on the Play Store. However, they don't work any more since they were based on the old UI Scheme. See [@Oxyenyos's PR](https://github.com/captn3m0/ideas/pull/10) for some more details.
+
 ## Automated Personal Finance
 
 :sparkles:
