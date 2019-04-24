@@ -475,7 +475,7 @@ Why: To demonstrate to Paytm that they need to educate their merchants better ab
 
 :warning: **Likely illegal to distribute.**
 
-There are two such apps available. Since they are based on the older UI scheme. I have also worked and currently working on one such app and Modified PayTm client APK. Details in PR description.
+Update: There are already two such apps on the Play Store. However, they don't work any more since they were based on the old UI Scheme. See [@Oxyenyos's PR](https://github.com/captn3m0/ideas/pull/10) for some more details.
 
 ## Automated Personal Finance
 
