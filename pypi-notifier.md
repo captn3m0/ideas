@@ -1,5 +1,7 @@
 # PyPi Notifier
 
+:rocket:
+
 Problem: No way to get updates when any package I am using has a new release.
 
 Solution:
@@ -32,3 +34,5 @@ All the sources are merged together.
 - Create a personal RSS feed for every user
 - Send out emails (configurable) for every release.
 - Optional direct tweets as well?
+
+:rocket: [Dependabot](https://dependabot.com/), [Renovate](https://github.com/renovatebot/renovate)

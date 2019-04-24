@@ -6,7 +6,7 @@
 
 -   [Introduction](#introduction)
 -   [NoFollow Enforcer](nofollow.md) :hankey:
--   [PyPi Notifier](pypi-notifier.md)
+-   [PyPi Notifier](pypi-notifier.md) :rocket:
 -   [OpenBook](#openbook) :hankey:
     -   [Expectations](#expectations)
     -   [Features](#features)
