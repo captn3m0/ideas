@@ -47,6 +47,7 @@
 -   [UPI On Desktop](#upi-on-desktop) :sparkles:
 -   [Helm Charts for Self-Hosting](#helm-charts-for-self-hosting)
 -   [Fake Paytm Payment](#fake-payment-payment)
+-   [CardDAV for Slack](#carddav-for-slack)
 -   [Licence](#licence)
 
 ## Introduction
@@ -511,6 +512,29 @@ If I were to try it again, I'd ensure a few things:
 1.  GUI first, with a great UX.
 2.  Cross platform, but I'd priritize Mac if necessary.
 3.  Save all data in [plaintextaccount](https://plaintextaccounting.org) compatible files. This would let people use other tools on top of this.
+
+## CardDAV on Slack
+
+While Slack calls are great, they are not the same as a Contact Entry in your phonebook.
+Because with a phonebook entry, you can make outbound calls without having internet, and
+you get contact details when your colleague calls you.
+
+The idea is to run a Slack OAuth based CardDAV server, which:
+
+1.  Authenticates the user over OAuth
+2.  Fetches the list of all users in a team
+3.  Generates a CardDAV URL for the authenticated user
+4.  Which can then be used by the user on their phone to sync Contacts one-way (From Server to Phone)
+
+Why one-way? You don't want changes made on the Client side to be pushed to the server.
+
+Why CardDAV? It is an open-protocol built to exactly solve this problem.
+
+And since you have the user's OAuth tokens, you can verify the token on every request to ensure that it is
+still valid. If the token is invalid, you return an empty Contact List, thus ensuring that users can't fetch contacts
+from teams they've left.
+
+Another cool hack this enables is that for teams on Free Plans, which supports "Skype" field in your profile, but not Phone number, it allows you to use the "skype" field to build contact sync which converts the field to a mobile/telephone field as long as it is a valid telephone number.
 
 ## UPI on Desktop
 
