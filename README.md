@@ -48,6 +48,7 @@
 -   [Helm Charts for Self-Hosting](#helm-charts-for-self-hosting)
 -   [Fake Paytm Payment](#fake-payment-payment)
 -   [CardDAV for Slack](#carddav-for-slack)
+-   [Make your own adventure for Twitter](#twitter-adventure-maker)
 -   [Licence](#licence)
 
 ## Introduction
@@ -555,6 +556,18 @@ This project envisions to reverse-engineer the NPCI Common Library. This would l
 -   Build BHIM on older devices
 
 This is a necessary step, but not the final step since that would be reversing the web APIs that common UPI apps use.
+
+# Twitter Adventure Maker
+
+Play your own Adventure on Twitter threads have gotten quite famous recently:
+
+- [Being Startup CEO for a day: 
+DON'T LET YOUR COMPANY DIE](https://twitter.com/scottburke777/status/1143356872633851906)
+- [Being Beyoncé’s assistant for the day: DONT GET FIRED](https://twitter.com/CORNYASSBITCH/status/1142591156884127744)
+
+[@ChettyArun was wondering](https://twitter.com/ChettyArun/status/1144534623642255360) how these were even made with Twitter. 
+
+One line pitch: Make a simple webapp that uses the Twitter UI to generate Play your own Adventures. For bonus points, add support for [Twine](https://twinery.org/) or perhaps DNML to let people create these easily.
 
 ---
 
