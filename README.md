@@ -49,6 +49,7 @@
 -   [Fake Paytm Payment](#fake-payment-payment)
 -   [CardDAV for Slack](#carddav-for-slack)
 -   [Make your own adventure for Twitter](#twitter-adventure-maker)
+-   [SVG to PNG on the Edge](#svg-to-png-on-the-edge)
 -   [Licence](#licence)
 
 ## Introduction
@@ -568,6 +569,14 @@ DON'T LET YOUR COMPANY DIE](https://twitter.com/scottburke777/status/11433568726
 [@ChettyArun was wondering](https://twitter.com/ChettyArun/status/1144534623642255360) how these were even made with Twitter. 
 
 One line pitch: Make a simple webapp that uses the Twitter UI to generate Play your own Adventures. For bonus points, add support for [Twine](https://twinery.org/) or perhaps DNML to let people create these easily.
+
+# SVG to PNG on the Edge
+
+I wanted to generate SVG images based on Social Media sharing templates that could be re-purposed as header images for any of my articles. Such a solution would help bloggers immensely, since your Open Graph images can be easily dynamically generated. Same goes for people with static sites. (Generating a static SVG is much easier than generating PNG images).
+
+If you have a magic box that converts SVG images to PNG images just before serving them to Open Graph scrapers. You can implement such a box using CloudFlare workers for eg.
+
+A few more links on this: [[a](https://fransdejonge.com/2018/03/twitter-and-facebook-dont-support-svg-yet/), [[b]](https://github.com/BreakOutEvent/breakout-frontend/issues/234), [[c]](https://indieweb.org/The-Open-Graph-protocol#Does_not_support_SVG_images)
 
 ---
 
