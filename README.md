@@ -288,6 +288,7 @@ Related links:
 - [Various Telegram client source code](https://github.com/TelegramOrg)
 - [MTProto proxy](https://mtproto.co/)
 - [Difference between the MTProto and Bot APIs](https://docs.pyrogram.org/topics/mtproto-vs-botapi)
+- [Pyrogram](https://docs.pyrogram.org/faq#what-is-pyrogram) seems to support MTProto, so that is what I'd try next.
 
 ## Disable Local Fonts Extension
 
