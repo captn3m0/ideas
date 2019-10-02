@@ -256,6 +256,7 @@ Keep it pluggable, otherwise its of no use.
 :gift: :sparkles:
 
 There are quite a lot of Telegram channels that are popping up these days that I really like using.
+
 Except there are lots of issues with telegram channels:
 
 1.  They are inside a closed network by-default. In order to access them you need to use the Telegram client
@@ -279,6 +280,14 @@ to channels, while users can join channels on their own. This makes a world
 of difference in that this doesn't require perission from the channel admins anymore.
 
 You could likely get this sponsored from the Internet Archive if you get something up and running.
+
+Related links:
+
+- [My attempt](https://github.com/captn3m0/opengram) - didn't go anywhere because the Node.JS library wasn't feature complete.
+- [MTProto Docs](https://core.telegram.org/mtproto)
+- [Various Telegram client source code](https://github.com/TelegramOrg)
+- [MTProto proxy](https://mtproto.co/)
+- [Difference between the MTProto and Bot APIs](https://docs.pyrogram.org/topics/mtproto-vs-botapi)
 
 ## Disable Local Fonts Extension
 
