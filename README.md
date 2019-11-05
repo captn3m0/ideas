@@ -580,6 +580,10 @@ DON'T LET YOUR COMPANY DIE](https://twitter.com/scottburke777/status/11433568726
 
 One line pitch: Make a simple webapp that uses the Twitter UI to generate Play your own Adventures. For bonus points, add support for [Twine](https://twinery.org/) or perhaps DNML to let people create these easily.
 
+# Playstore RSS Feed for Version Updates
+
+An RSS feed to follow updates on applications would be nice. Details: https://github.com/RSS-Bridge/rss-bridge/issues/1352.
+
 # SVG to PNG on the Edge
 
 I wanted to generate SVG images based on Social Media sharing templates that could be re-purposed as header images for any of my articles. Such a solution would help bloggers immensely, since your Open Graph images can be easily dynamically generated. Same goes for people with static sites. (Generating a static SVG is much easier than generating PNG images).
