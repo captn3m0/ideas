@@ -50,6 +50,9 @@
 -   [CardDAV for Slack](#carddav-for-slack)
 -   [Make your own adventure for Twitter](#twitter-adventure-maker)
 -   [SVG to PNG on the Edge](#svg-to-png-on-the-edge)
+-   [Playstore RSS Feed for App Updates](#playstore-rss-feed-for-version-updates)
+-   [ICS Calendar Feed for Event websites](#calendar-feed-for-event-websites)
+-   [OPDS iOS FileProvider](opds-ios-file-provider.md)
 -   [Licence](#licence)
 
 ## Introduction
