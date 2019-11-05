@@ -584,6 +584,12 @@ One line pitch: Make a simple webapp that uses the Twitter UI to generate Play y
 
 An RSS feed to follow updates on applications would be nice. Details: https://github.com/RSS-Bridge/rss-bridge/issues/1352.
 
+# Calendar Feed for Event Websites
+
+Would be great if I could open my Calendar application and immediately look at events that are happening around me. Aim is to subscribe to "Fun Events - Bangalore (Insider)" or "Plays in Bengaluru (BookMyShow)" calendars for eg.
+
+Insider has an API that could help with this: https://api.insider.in/home?filterBy=go-out&city=bangalore
+
 # SVG to PNG on the Edge
 
 I wanted to generate SVG images based on Social Media sharing templates that could be re-purposed as header images for any of my articles. Such a solution would help bloggers immensely, since your Open Graph images can be easily dynamically generated. Same goes for people with static sites. (Generating a static SVG is much easier than generating PNG images).
