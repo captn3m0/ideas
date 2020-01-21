@@ -53,6 +53,7 @@
 -   [Playstore RSS Feed for App Updates](#playstore-rss-feed-for-version-updates)
 -   [ICS Calendar Feed for Event websites](#calendar-feed-for-event-websites)
 -   [OPDS iOS FileProvider](opds-ios-file-provider.md)
+-   [NammaBescom OCR Bot](#nammabescom-ocr-bot)
 -   [Licence](#licence)
 
 ## Introduction
@@ -600,6 +601,14 @@ I wanted to generate SVG images based on Social Media sharing templates that cou
 If you have a magic box that converts SVG images to PNG images just before serving them to Open Graph scrapers. You can implement such a box using CloudFlare workers for eg.
 
 A few more links on this: [[a](https://fransdejonge.com/2018/03/twitter-and-facebook-dont-support-svg-yet/), [[b]](https://github.com/BreakOutEvent/breakout-frontend/issues/234), [[c]](https://indieweb.org/The-Open-Graph-protocol#Does_not_support_SVG_images)
+
+## NammaBescom OCR/Overlay Bot
+
+A bot that waits for tweets from [@NammaBescom](https://twitter.com/NammaBESCOM), OCRs the image they send, replies
+with the OCR version of the text, and attaches a map on the tweet with an overlay map of all the areas that lost power
+in the last 24 hours.
+
+Credits: https://twitter.com/kingslyj/status/1219697117909803008
 
 ---
 
