@@ -608,6 +608,8 @@ A bot that waits for tweets from [@NammaBescom](https://twitter.com/NammaBESCOM)
 with the OCR version of the text, and attaches a map on the tweet with an overlay map of all the areas that lost power
 in the last 24 hours.
 
+A slightly stale version of this data is available at https://www.bescom.org/upo/public.php in text format.
+
 Credits: https://twitter.com/kingslyj/status/1219697117909803008
 
 ---
