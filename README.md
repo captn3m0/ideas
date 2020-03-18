@@ -596,7 +596,9 @@ I wanted to generate SVG images based on Social Media sharing templates that cou
 
 If you have a magic box that converts SVG images to PNG images just before serving them to Open Graph scrapers. You can implement such a box using CloudFlare workers for eg.
 
-A few more links on this: [[a](https://fransdejonge.com/2018/03/twitter-and-facebook-dont-support-svg-yet/), [[b]](https://github.com/BreakOutEvent/breakout-frontend/issues/234), [[c]](https://indieweb.org/The-Open-Graph-protocol#Does_not_support_SVG_images)
+A few more links on this: [[a](https://fransdejonge.com/2018/03/twitter-and-facebook-dont-support-svg-yet/), [[b]](https://github.com/BreakOutEvent/breakout-frontend/issues/234), [[c]](https://indieweb.org/The-Open-Graph-protocol#Does_not_support_SVG_images).
+
+A somewhat relevant thing: https://www.bannerbear.com/
 
 ## NammaBescom OCR/Overlay Bot
 
