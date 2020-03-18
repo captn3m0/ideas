@@ -2,79 +2,103 @@
 >
 > -   [swombat](https://news.ycombinator.com/item?id=250793)
 
-**Table of Contents**
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
--   [Introduction](#introduction)
--   [NoFollow Enforcer](nofollow.md) :hankey:
--   [PyPi Notifier](pypi-notifier.md) :rocket:
--   [OpenBook](#openbook) :hankey:
-    -   [Expectations](#expectations)
-    -   [Features](#features)
-    -   [Interface](#interface)
-    -   [Backend](#backend)
--   [iStalk](#istalk) :hankey:
-    -   [Idea](#idea)
-    -   [Interface](#interface-1)
--   [Distributed Privacy conscious TrueCaller Alternative](yellow-pages.md) :sparkles: :gift:
--   [Collaborative Bookmarking](#collaborative-bookmarking) :sparkles: :gift:
--   [Lightspeed for Chrome](#lightspeed-for-chrome) :rocket:
--   [Facebook Analytics](#facebook-analytics)
--   [API for Workflowy](#api-for-workflowy)
--   [Onion Cannon](onioncannon.md) (E2E encrypted communication for machines)
--   ~~[Lettersafe](#lettersafe) :hankey:~~
--   [Email on top of keybase](#email-on-top-of-keybase)
--   [Newsletters for GitHub](#newsletters-for-github) :rocket:
--   [Hacking via OAauth tokens](#hacking-via-oaauth-tokens) :rocket:
-    -   [But OAuth tokens can be revoked](#but-oauth-tokens-can-be-revoked)
-    -   [Procedure](#procedure)
--   [Pluggable Notify Daemon for linux](#pluggable-notify-daemon-for-linux)
--   [Telegram Channel to RSS](#telegram-to-rss) :gift: :sparkles:
--   [Disable Local Fonts Extension](#disable-local-fonts-extension) :gift:
--   [Community Browser Extension](communities-browser-extension.md) :gift:
--   [Card Game Modelling (Research)](card-game-modelling.md)
--   [Arch Linux Package Build System](#arch-linux-package-build-system)
--   [Hacker News Research Bot](#hacker-news-research-bot)
--   [Slack Dialer](#slack-dialer) :construction:
--   [Mars - Mars: Terraform Remote HTTP Backend with End-to-End encryption](mars.md)
--   [Tachiyomi Headless](#tachiyomi-headless) - Comic book scraper for all platforms
--   [OPML Generator](#opml-generator) :rocket:
--   [Bangalore Events List](#bangalore-events-list) :construction:
--   [Amazon Price Tracker with RSS](#amazon-price-tracker-with-rss) :rocket:
--   [OPML Sync](#opml-sync)
--   [Database Conversion Toolkit using an ORM](#database-conversion-toolkit-using-an-orm)
--   [Sanskari Proxy](#sanskari-proxy) :gift: :sparkles:
--   [Automated Personal Finance](#automated-personal-finance) :sparkles:
--   [UPI On Desktop](#upi-on-desktop) :sparkles:
--   [Helm Charts for Self-Hosting](#helm-charts-for-self-hosting)
--   [Fake Paytm Payment](#fake-payment-payment)
--   [CardDAV for Slack](#carddav-for-slack)
--   [Make your own adventure for Twitter](#twitter-adventure-maker)
--   [SVG to PNG on the Edge](#svg-to-png-on-the-edge)
--   [Playstore RSS Feed for App Updates](#playstore-rss-feed-for-version-updates)
--   [ICS Calendar Feed for Event websites](#calendar-feed-for-event-websites)
--   [OPDS iOS FileProvider](opds-ios-file-provider.md)
--   [NammaBescom OCR Bot](#nammabescom-ocr-bot)
--   [Licence](#licence)
+- [Introduction](#introduction)
+- [OpenBook :hankey:](#openbook-hankey)
+  - [Expectations](#expectations)
+  - [Features](#features)
+  - [Interface](#interface)
+  - [Backend](#backend)
+- [iStalk :hankey:](#istalk-hankey)
+  - [Idea](#idea)
+  - [Interface](#interface-1)
+- [Collaborative Bookmarking :sparkes: :gift:](#collaborative-bookmarking-sparkes-gift)
+- [Lightspeed for Chrome :rocket:](#lightspeed-for-chrome-rocket)
+- [Facebook Analytics](#facebook-analytics)
+- [API for Workflowy](#api-for-workflowy)
+- [Lettersafe :hankey:](#lettersafe-hankey)
+- [Email on top of keybase](#email-on-top-of-keybase)
+- [Newsletters for GitHub :rocket:](#newsletters-for-github-rocket)
+- [Hacking via OAauth tokens :rocket:](#hacking-via-oaauth-tokens-rocket)
+  - [But OAuth tokens can be revoked](#but-oauth-tokens-can-be-revoked)
+  - [Procedure](#procedure)
+- [Pluggable Notify Daemon for Linux](#pluggable-notify-daemon-for-linux)
+- [Telegram To RSS :gift: :sparkles:](#telegram-to-rss-gift-sparkles)
+- [Disable Local Fonts Extension :gift:](#disable-local-fonts-extension-gift)
+- [Arch Linux Package Build System](#arch-linux-package-build-system)
+- [Hacker News Research Bot](#hacker-news-research-bot)
+- [Slack Dialer :gift: :construction:](#slack-dialer-gift-construction)
+- [Database Conversion Toolkit using an ORM](#database-conversion-toolkit-using-an-orm)
+- [Tachiyomi Headless :gift:](#tachiyomi-headless-gift)
+- [OPML Generator :rocket:](#opml-generator-rocket)
+- [Bangalore Events List :gift: :construction:](#bangalore-events-list-gift-construction)
+- [Amazon Price Tracker with RSS :rocket:](#amazon-price-tracker-with-rss-rocket)
+- [OPML Sync](#opml-sync)
+- [Sanskari Proxy :gift: :sparkles:](#sanskari-proxy-gift-sparkles)
+- [Helm Charts for Self-Hosting](#helm-charts-for-self-hosting)
+- [Fake Paytm Payment](#fake-paytm-payment)
+- [Automated Personal Finance :sparkles:](#automated-personal-finance-sparkles)
+- [CardDAV on Slack](#carddav-on-slack)
+- [UPI on Desktop :sparkles:](#upi-on-desktop-sparkles)
+- [Twitter Adventure Maker](#twitter-adventure-maker)
+- [Playstore RSS Feed for Version Updates](#playstore-rss-feed-for-version-updates)
+- [Calendar Feed for Event Websites](#calendar-feed-for-event-websites)
+- [SVG to PNG on the Edge](#svg-to-png-on-the-edge)
+- [NammaBescom OCR/Overlay Bot](#nammabescom-ocroverlay-bot)
+- [nofollow enforcer :hankey:](#nofollow-enforcer-hankey)
+  - [Introduction](#introduction-1)
+  - [Need](#need)
+  - [Solution](#solution)
+  - [Notes](#notes)
+- [Mars: Terraform Remote HTTP Backend with End-to-End encryption :gift:](#mars-terraform-remote-http-backend-with-end-to-end-encryption-gift)
+  - [Why](#why)
+  - [Backend](#backend-1)
+  - [Extras](#extras)
+- [iOS OPDS File Provider :gift:](#ios-opds-file-provider-gift)
+- [iOS \*sonic File Provider](#ios-%5Csonic-file-provider)
+- [collaborative-bookmarking](#collaborative-bookmarking)
+- [Boardgame AI Gym 👩‍🔬](#boardgame-ai-gym-%E2%80%8D)
+- [Green/Yellow Pages :gift: :sparkles:](#greenyellow-pages-gift-sparkles)
+  - [API](#api)
+  - [Spam registration](#spam-registration)
+  - [Data Store](#data-store)
+  - [Check](#check)
+  - [Ledger](#ledger)
+  - [Directory](#directory)
+  - [Application](#application)
+  - [Security/Privacy concerns](#securityprivacy-concerns)
+  - [Deregistration](#deregistration)
+  - [Cost of Computation](#cost-of-computation)
+  - [Terms](#terms)
+  - [References](#references)
+- [communities browser extension :gift:](#communities-browser-extension-gift)
+- [onioncannon](#onioncannon)
+  - [Use Case](#use-case)
+- [PyPi Notifier](#pypi-notifier)
+  - [Sources](#sources)
+  - [Notifications](#notifications)
+- [Licence](#licence)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Introduction
 
 This is a open repository of personal ideas. Some of these are based on personal interactions, bug reports, and discussions I've had with lots of people. I've tried to give credit wherever possible. I also try to reference similar/existing projects that might relate to the idea, so if you know of something that is interesting in that space, file a PR or send me a link.
-
-## OpenBook
 
 Some ideas are annotated with emojis:
 
 -   :sparkles: - Favorite Ideas. I really like this, and you could possible build a company of some of these.
 -   :hankey: - Not all ideas are great. These are things I thought might work at one point, but no longer consider worth building. I don't remove such ideas from the repo, because I think all ideas are worth learning from.
 -   :gift: - I'd love to help you build this, consider this like a bounty. You'll get a personal postcard from me for building something on this list.
--   :rocket: Someone (might be be) built this!
+-   :rocket: Someone (might be me) built this!
 -   :construction: There is a work-in-progress implementation.
 
 All of the above are just indicative. Make something people want is the YC motto, but sometimes you must make something for no good reason other than "just because".
 
-## OpenBook
-
-:hankey:
+## OpenBook :hankey:
 
 _Edit_: Lots of marketing companies already have built this, but not in the creepy way that I'd have liked.
 
@@ -122,9 +146,7 @@ A profile creation page allows you to specify as much information as you have on
 
 Once a profile has been created, we will continuously long-poll the service to fetch new information as and when it becomes available. Real-time notifications are delivered to you as the person's activity is tracked.
 
-## Collaborative Bookmarking
-
-:sparkes: :gift:
+## Collaborative Bookmarking :sparkes: :gift:
 
 There are a dozen bookmarking services out there, many of them quite well done. However, most services are focused on the idea that bookmarking is a lone-person habit, which someone does in isolation.
 
@@ -136,9 +158,7 @@ Bookmarking for Teams, in essence. Some good alternatives are [listed in this qu
 I've described this idea somewhat better in a chat log at [collaborative-bookmark.md](collaborative-bookmark.md)
 Google Spaces did some nice work here, but the product was shut down within an year of launch.
 
-## Lightspeed for Chrome
-
-:rocket:
+## Lightspeed for Chrome :rocket:
 
 [Lightspeed](https://www.youtube.com/watch?v=wLnSLFrQDG8) is an experimental UI design (not implemented) for Firefox that focuses on making the New Tab page more functional by giving the browser a decent way to search across bookmarks, open tabs, and history.
 
@@ -160,9 +180,7 @@ A recommendation engine built on top of my facebook data is a good idea, I think
 
 Workflowy is a cool tool that I use for note-taking. It allows infinitely nested lists with @mention and #hashtag support. One thing it lacks currently is API for me to access my own data. I think workflowy is a great tool that could become a lot better if there were a way for developers to hook into it. (For example using workflowy as a data-backend for a todo-app).
 
-## Lettersafe
-
-:hankey:
+## Lettersafe :hankey:
 
 My notes for lettersafe are on [workflowy](https://workflowy.com/s/5439f7a9-3762-f247-3e96-4d047b5d4ce0).
 
@@ -188,9 +206,7 @@ Doing the same thing on the receiving side is trickier though, but I like the id
 
 A Keybase plugin for Thunderbird would be similar in scope.
 
-## Newsletters for GitHub
-
-:rocket:
+## Newsletters for GitHub :rocket:
 
 A lot of github project owners would like to send out newsletters to all of their
 stargazers. However, GitHub doesn't provide anything for that. An easy way would
@@ -215,9 +231,7 @@ _Update_: GitHub now supports [watching releases](https://github.blog/changelog/
 
 There are lots of related projects in this thread: https://github.com/isaacs/github/issues/410
 
-## Hacking via OAauth tokens
-
-:rocket:
+## Hacking via OAauth tokens :rocket:
 
 While pen-testing, once you've gained access to the target, it is often necessary to install a backdoor to mantain the access. While this is easily done in case of root access to the machine, this is not that easy if the target is an email account, lets say.
 
@@ -255,9 +269,7 @@ for each of them. (GMail notifications might open your mail client if you click 
 
 Keep it pluggable, otherwise its of no use.
 
-## Telegram To RSS
-
-:gift: :sparkles:
+## Telegram To RSS :gift: :sparkles:
 
 There are quite a lot of Telegram channels that are popping up these days that I really like using.
 
@@ -294,9 +306,7 @@ Related links:
 - [Difference between the MTProto and Bot APIs](https://docs.pyrogram.org/topics/mtproto-vs-botapi)
 - [Pyrogram](https://docs.pyrogram.org/faq#what-is-pyrogram) seems to support MTProto, so that is what I'd try next.
 
-## Disable Local Fonts Extension
-
-:gift:
+## Disable Local Fonts Extension :gift:
 
 A simple browser extension for web developers that disable local fonts from loading. Alternatively, it raises a grave warning if a web-font was bypassed for a local font. This is helpful if you are a developer:
 
@@ -334,7 +344,7 @@ _Update 2_: The mods are not very happy with the [abstract being posted](https:/
 
 For Bonus Points: Include a link to the fermat library URL of the paper (if available).
 
-# Slack Dialer :gift: :construction:
+## Slack Dialer :gift: :construction:
 
 All of our company has contact numbers added on Slack, but it is cumbersome to find someone's profile on Slack. A simple dialer application that does OAuth-verification on your Slack profile to get a list of the entire organization, and present a simple dialer for all the people who have contact details added.
 
@@ -344,7 +354,7 @@ Note that this requires a Slack team with a paid account. I'll help you get a tr
 
 :construction: <https://github.com/captn3m0/slack-dialer>
 
-# Database Conversion Toolkit using an ORM
+## Database Conversion Toolkit using an ORM
 
 Something that lets you switch your database between SQLite/MySQL/Postgres/... by using
 an existing ORM framework to import and export out the correct commands.
@@ -358,9 +368,7 @@ sqlite to mysql and trying every solution in [this SO question](https://stackove
 
 There are some closed solutions to this, but would like a open-source solution that does this well.
 
-## Tachiyomi Headless
-
-:gift:
+## Tachiyomi Headless :gift:
 
 [Tachiyomi](https://github.com/inorichi/tachiyomi/) is a Android application written in Kotlin that
 scrapes comics from various web sources. A headless version of it would be great to have, replacing
@@ -392,9 +400,7 @@ comics:
     - https://manga-fox.com/one-piece
 ```
 
-## OPML Generator
-
-:rocket:
+## OPML Generator :rocket:
 
 Simple web tool to generate OPML files to let you use RSS feeds everywhere.
 
@@ -417,9 +423,7 @@ What if one could generate a OPML feed for:
 
 Related: https://github.com/RSS-Bridge/rss-bridge (I have contributed a few bridges to this)
 
-## Bangalore Events List
-
-:gift: :construction:
+## Bangalore Events List :gift: :construction:
 
 Similar in scope to http://webuild.sg/ or http://engineers.sg/ but for Bangalore.
 
@@ -431,9 +435,7 @@ Domain name suggestions are welcome. Since blr doesn't have a TLD, I was conside
 
 Initial Work: https://github.com/captn3m0/gardencity.events There is also some work from @tallpants on this at <https://github.com/tallpants/meetup2ics/>
 
-## Amazon Price Tracker with RSS
-
-:rocket:
+## Amazon Price Tracker with RSS :rocket:
 
 There are some nice open source trackers available for Price Tracking Amazon products,
 but I would like to see something that generated an RSS Feed.
@@ -457,9 +459,7 @@ a product idea by itself, more of a extension idea for existing RSS Readers.
 
 See related discussion on the [tt-rss forums](https://discourse.tt-rss.org/t/subscribe-to-opml/1230).
 
-## Sanskari Proxy
-
-:gift: :sparkles:
+## Sanskari Proxy :gift: :sparkles:
 
 A lot of Indian Government websites are inaccessible on the public internet, because
 they geo-fence it to within Indian Boundaries. I made a list of all [Indian Government
@@ -494,9 +494,7 @@ Why: To demonstrate to Paytm that they need to educate their merchants better ab
 
 Update: There are already two such apps on the Play Store. However, they don't work any more since they were based on the old UI Scheme. See [@Oxyenyos's PR](https://github.com/captn3m0/ideas/pull/10) for some more details.
 
-## Automated Personal Finance
-
-:sparkles:
+## Automated Personal Finance :sparkles:
 
 A personal finance application that tracks things automatically, but saves all data on your systems.
 
@@ -552,9 +550,7 @@ from teams they've left.
 
 Another cool hack this enables is that for teams on Free Plans, which supports "Skype" field in your profile, but not Phone number, it allows you to use the "skype" field to build contact sync which converts the field to a mobile/telephone field as long as it is a valid telephone number.
 
-## UPI on Desktop
-
-:sparkles:
+## UPI on Desktop :sparkles:
 
 A clean-room reverse engineered implementation of the NPCI Common Library.
 
@@ -572,7 +568,7 @@ This project envisions to reverse-engineer the NPCI Common Library. This would l
 
 This is a necessary step, but not the final step since that would be reversing the web APIs that common UPI apps use.
 
-# Twitter Adventure Maker
+## Twitter Adventure Maker
 
 Play your own Adventure on Twitter threads have gotten quite famous recently:
 
@@ -584,17 +580,17 @@ DON'T LET YOUR COMPANY DIE](https://twitter.com/scottburke777/status/11433568726
 
 One line pitch: Make a simple webapp that uses the Twitter UI to generate Play your own Adventures. For bonus points, add support for [Twine](https://twinery.org/) or perhaps DNML to let people create these easily.
 
-# Playstore RSS Feed for Version Updates
+## Playstore RSS Feed for Version Updates
 
 An RSS feed to follow updates on applications would be nice. Details: https://github.com/RSS-Bridge/rss-bridge/issues/1352.
 
-# Calendar Feed for Event Websites
+## Calendar Feed for Event Websites
 
 Would be great if I could open my Calendar application and immediately look at events that are happening around me. Aim is to subscribe to "Fun Events - Bangalore (Insider)" or "Plays in Bengaluru (BookMyShow)" calendars for eg.
 
 Insider has an API that could help with this: https://api.insider.in/home?filterBy=go-out&city=bangalore
 
-# SVG to PNG on the Edge
+## SVG to PNG on the Edge
 
 I wanted to generate SVG images based on Social Media sharing templates that could be re-purposed as header images for any of my articles. Such a solution would help bloggers immensely, since your Open Graph images can be easily dynamically generated. Same goes for people with static sites. (Generating a static SVG is much easier than generating PNG images).
 
@@ -611,6 +607,485 @@ in the last 24 hours.
 A slightly stale version of this data is available at https://www.bescom.org/upo/public.php in text format.
 
 Credits: https://twitter.com/kingslyj/status/1219697117909803008
+
+## nofollow enforcer :hankey:
+
+### Introduction
+
+Read [What is rel=nofollow](https://support.google.com/webmasters/answer/96569?hl=en) if you don't know what that is.
+
+The above link has the following specific snippet:
+
+> If you want to recognize and reward trustworthy contributors, you could decide to automatically or manually remove the nofollow attribute on links posted by members or users who have consistently made high-quality contributions over time.
+
+However, this is something that is not even attempted by the majority of large user-generated content websites such as medium, quora or even wikipedia. This is an attempt to fix this problem. [Wikipedia](https://meta.wikimedia.org/wiki/Nofollow) had a lot of discussion on this topic before enabling nofollow on all external links in 2007.
+
+### Need
+
+-   rel=nofollow saves you from spam
+-   it improves the quality of content
+-   it reduces the quality of backlinks
+
+We need a reliable way that balances these two approaches. Something that:
+
+-   detects low quality link spam and marks those links as nofollow
+-   detects high quality links as good and let those be followed by search engines
+
+For the links that fall in the middle, ie the ones we aren't so sure about we can either play safe and mark them as nofollow or specify a threshold score that must be matched before we unmark them.
+
+### Solution
+
+-   StackOverflow is one of the few websites that has even attempted to solve [this issue](http://meta.stackexchange.com/questions/111279/remove-nofollow-on-links-deemed-reputable). Their solution involves a lot of metadata they already have about the link (such as answer/comment score, votes, age etc) and they use that to mark a link as reputed.
+
+Their approach is closed, so as to dissuade spammers from understanding it and working around it.
+
+The general idea is to build a machine learning system that takes in a piece of content along with some optional metadata (such as authorship information) and then uses it to mark each link in the content as reputed/nofollow.
+
+### Notes
+
+_These are free-flow notes about the problem/solution/idea._
+
+-   Training Data: Since so many sites already have heaps of user generated content, we can use their data (stackoverflow, wikipedia provide dumps) to get good quality links.
+-   Reputed Sites: A very quick way to get off the ground would be to mark sources as reputed, such as wikipedia, new york times etc.
+-   Accuracy: As a very basic check, we could use StackOverflow dataset (since it is partially nofollow) to check our own accuracy against their implementation.
+-   Metadata: Will have to consider some metadata (such as authorship) along with the content itself, so as to improve spam accuracy. For instance, if the same user is posting too many links in a short time, we might mark future attempts as spam.
+-   We could use akismet partially as a heuristic for partial content.
+-   The idea is to build an API quite similar to akismet that can be embedded as plugins in content sites like wordpress and wikis.
+-   We should also take care to actually check the link itself. For instance, the original link might point to some dummy site, but redirect to a spam website. Google would follow the redirect while crawling, and land up on the spam site if we are not careful.
+
+
+## Mars: Terraform Remote HTTP Backend with End-to-End encryption :gift:
+
+A fork of <https://www.terraform.io/docs/backends/types/http.html>, which changes the configuration format to:
+
+```hcl
+terraform {
+  backend "mars" {
+    address = "https://mars.com/03fa43d6-adbe-4e03-8e25-ffdf8a3e456a"
+    encryption_key = "${var.MARS_ENCRYPTION_KEY}"
+  }
+}
+```
+
+The lock/unlock address can be inferred. The service can be made public as well, since the backend just needs to be a simple/dumb storage for blobs (back it by S3 perhaps?)
+
+### Why
+
+-   For casual projects, Terraform Enterprise is too much
+-   Separate Infrastructure for Terraform State store makes sense
+-   Not everyone has S3 available
+-   Just share your UUID and the encryption key with your teammates
+
+### Backend
+
+Needs to be a public good with restrictions:
+
+1.  Reasonable Rate limits
+2.  File size limits
+3.  Restrict by terraform-user-agent, because why not
+4.  Block unencrypted data from being stored
+
+### Extras
+
+-   This needs to be Highly Available if folks are gonna use it
+-   Use NaCl for crypto
+-   Support a breakdown into `read_encryption_key` and `write_encryption_key` for key rotation
+-   The encryption parts can perhaps be merged to upstream
+
+## iOS OPDS File Provider :gift:
+
+iOS 11 and above support browsing arbitary "cloud" filesystems using a ["File Provider Extension"][fpe]. This allows your application to expose a arbitary directory structure to other applications using the Files app (and file-picker dialogs).
+
+Common use-cases include picking files from Dropbox, GDrive, iCloud etc. Here's a simple tutorial that demonstrates the idea: https://www.raywenderlich.com/697468-ios-file-provider-extension-tutorial.
+
+The idea is to build a simple app that implements a dumb OPDS browser, along with a File Provider Extension. This magically makes all applications on your device OPDS aware, which is a Great Thing :tm:
+
+OPDS here is the [open publication distribution system](https://en.wikipedia.org/wiki/OPDS), which allows a large number of clients to access digital libraries and publications with mostly-sane distribution and browsing semantics.
+
+As an example, [Arxiv has a OPDS](https://arxiv-opds.herokuapp.com/) server without any authentication. You could enter this one URL in your application settings, and now all Arxiv PDFs are instantly browseable in your Files application.
+
+OPDS support search as well, but I'm not sure of File Provider Extension does, but that would be another cool usecase. The application UI is just 2 screens:
+
+1. List of connected OPDS Servers
+2. Edit/Add screen for a OPDS Server. Includes fields for URL/Username/Password.
+
+Brownie points for adding support for rendering ebook thumbnails, but that is optional.
+
+## iOS \*sonic File Provider
+
+Similarly, the [SubSonic API](http://www.subsonic.org/pages/api.jsp) is decently documented, reversed and re-implemented across a lot of clients. A single application that adds support for SubSonic File Provider will allow any other application to pick song files from a subsonic source. Not as many usecases as picking ebooks or PDFs, but good nonetheless.
+
+[fpe]: https://developer.apple.com/documentation/fileprovider
+
+## collaborative-bookmarking
+
+if you haven't used dropbox folder sync in the past, this is how it works:
+
+you have a parent dropbox director
+you create subdirectories
+you pick a subdirectory
+and you share it with people
+everyone with access gets the same directory in their dropbox
+their edits to the directory are synced with yours
+I'm skipping over conflicts for now
+take this to bookmarks: everyone has a bookmark thing in their browser
+chrome has 2 parent directories, though -> bookmarks, and tab bar
+I add bookmarks and save them in a special directory. I get a share option in the extension against every parent level directory
+to share with other people
+
+
+The interface is basically:
+
+- Coding (shared with user@example.com) [Synced]
+- Books
+- Projects
+- Elixir (shared with person@mail.com) [Syncing]
+
+If the other person checks their bookmarks directory, they see the same directory and links
+
+edits are synced as well, so you can edit bookmarks (title only) and it gets synced back
+
+There are lots of tools that already sync your browser bookmarks, but once you have the base in place,
+you can make the "source/sink" configurable to things like Google Save / Pockets / Pinboard etc.
+
+## Boardgame AI Gym 👩‍🔬
+
+The idea is a mix of 2 things: reading research papers about Monopoly, and playing a lot of boardgames. There is a lot of good research work around monopoly [0] and certain card games (Poker etc), but modern board games (Catan has a little research community) haven't been looked at much. I wanted to do simulation-based research for modern games, but found that there is no easy tooling available to do this.
+
+CardWorld is "OpenAI Gym for boardgames". The complete idea is:
+
+1. Have a board game framework in place that allows people to write rulesets for their favorite games. These get registered as environments in the Gym.
+2. Allow anyone to submit a agent script for this environment that plays this game. This could be written in any language that the platform supports.
+3. Have a runner system that runs these agents against each other.
+
+The benefits I can see are these:
+
+1. Crowdsource AI research on turn-based games. The easier it is to write a bot that plays Hearts, the more people will try their hand at it.
+2. Improve our understanding of Card Game Modelling. There has been some research in this area earlier[1] involving languages specific to model this, but I think there is a lot of scope of improvement here.
+3. Give the boardgame community the tools to simulate and understand strategies for modern board games. Everyone knows you must buy the Transports in Monopoly, but what is the optimum strategy for Settlers of Catan?
+
+Work so far:
+
+- https://github.com/captn3m0/sushigo/
+- https://github.com/captn3m0/gothok
+- https://git.captnemo.in/nemo/boardgame2vec/
+
+## Green/Yellow Pages :gift: :sparkles:
+
+A distributed directory for spam reports.
+
+I despise [TrueCaller][tc], the current world-leader in this space,
+because their entire business model depends on users selling their data
+to Truecaller, which can then make as much money from this database.
+
+When you look at the root problem that truecaller is solving,
+it is a reverse-yellow-pages directory to avoid spam calls.
+
+To solve this:
+
+1.  You need a way to check a number against a known spam list.
+2.  You need the check to be as fast as possible.
+
+If you want to beat TrueCaller, this check should be completely offline,
+to present a significant advantage.
+
+### API
+
+The API has 2 endpoints:
+
+1.  Register a number as spam.
+2.  Check a number and get a YES/NO spam response.
+
+### Spam registration
+
+To prevent abuse, you want the client to do some
+proof of work before _each_ submission. Publish
+a hash of the input number in a ledger.
+
+### Data Store
+
+Maintain a layered bloom filter ([research][res])
+for each of the country-domains. We don't store
+the original number, though, but the hash of the
+phone number in the bloom filters.
+
+### Check
+
+Any party can request a check by sending us a
+hash of the phone number (so it doesn't really
+leak _much_ info) along with the country code.
+We want a slow hash function but since we
+want this to be verifiable on the client itself,
+the ideal would be that it takes \~0.25s on a
+average mobile device. 
+
+Once we recieve the hash, check it against all
+the bloom filter layers in parallel and
+return the results as a score. 
+
+For eg, if we have 1000 layers (to check upto
+1000 reports), return the highest layer number
+that has an entry for the number. 
+
+### Ledger
+
+The above-mentioned ledger is an easy way of
+ensuring verified sync with any other party
+that wants to maintain the same data store.
+
+This is not a very robust solution, and an
+ideal solution would be to let the client
+publish on the ledger, and everyone
+can just pick up from the ledger.
+
+Different entities can create different
+directories depending on the client
+properties. For eg, if a client has
+reported too many spam reports,
+you can reduce their contribution.
+
+A generator might also consider
+the frequency of such reports, along
+with their age so that recent reports
+are given more weightage.
+
+The nice thing here is that, since
+all violations are published on the
+ledger, you can re-create the directory
+from the ledger at any time.
+
+### Directory
+
+A generated directory is a compressed
+export of the nth layer of the bloom
+filter. `n` here can be decided by
+the customer. So you can pick n=5,
+for a high-false-negative rate.
+
+Over time, I expect this to be standardized
+as high/low/medium.
+
+### Application
+
+The application uses a list
+of country codes (which it can
+auto-fill from the application
+context) as input to download
+directories from various known
+sources. The remainder of the
+application is spent on interrupting
+inbound calls and adding a overlay
+with the call score.
+
+### Security/Privacy concerns
+
+While hashing is the right choice here,
+it still has issues. A valid phone number
+may be very small and we are already
+recording the contry code to reduce
+the size and improve directory efficiency.
+
+See [this][solomon] for eg, where the
+actual phone number is just 5 digits.
+
+Even if you use a really slow hash function,
+and it takes 2 seconds to hash each
+number, it only takes 37 hrs _total-compute time_,
+which can easily be run in parallel to guess
+any numbers which may have been ever entered
+in the ledger.
+
+The problem here is that we want repeated
+numbers to hash to the same value, so as
+to ensure duplicates get recorded properly.
+
+This might be possible if all clients
+can store a copy of the entire ledger,
+but that doesn't sound like a good idea.
+
+However, the mere fact that a phone
+number is in the ledger isn't
+as important as _when_ it was added.
+
+A client should ideally add a random
+delay (to the tune of hours) and batch
+any writes to the ledger so as to
+reduce chances of leak.
+
+If A calls B, and B immediately
+writes A's number to the ledger,
+A can pretty much guarantee
+that it was B who did it.
+
+There is a counter-argument here to be made
+about how you want honest clients and
+immediate publishing would increase
+transparency and hopefully get more
+_actual spammers_ on the list.
+
+Another concern is about publishing the client
+identifier in the ledger, since it can
+lead to the network figuring your
+calling patterns. However, since an entry
+is only added voluntarily, and doesn't really
+have any PII, I think it is a reasonable
+tradeoff to make.
+
+### Deregistration
+
+Phone numbers are not people. They can
+be transferred, and what was a spammy
+telemarketer earlier could now be your number.
+
+There is no easy way here, other than having
+a "negative" entry in the ledger, with
+a far higher cost attached to it.
+
+The client should always whitelist any
+saved mobile numbers as well.
+
+Another solution is to have a second
+"verified" ledger of some sort, where
+people can verify themselves as not-a-spammer
+by "some means". Not sure how this could be
+done in a distributed manner though.
+
+### Cost of Computation
+
+-   Verification should be fast
+-   Insertions should be slow
+-   Client registrations should be costly
+
+By costly, I mean the compute price, not monetary.
+A nice way to equalize this would be to make
+a registration as hard as 10 insertions, so
+creating a client and reporting 9 further
+times would be much more cheaper to do.
+
+This helps in ensuring that there is still
+a way to counter spam reports. I'm sure
+there are better ideas, though.
+
+### Terms
+
+_Directory_: The actual data store holding a "Yes/No" filter of whether a number is spammy or not.
+_Ledger_: A blockchain or ditributed log that maintains any reports.
+
+### References
+
+-   You should totally read [Falsehoods Programmers Believe About Phone Numbers](https://github.com/googlei18n/libphonenumber/blob/master/FALSEHOODS.md)
+-   [bitly/dablooms](https://github.com/bitly/dablooms) - an attempt by bitly to solve spam problems with a layered bloom filter which is countable as well
+-   [scalable bloom filters](https://www.sciencedirect.com/science/article/pii/S0020019006003127)
+-   [A multi-layer bloom filter for duplicated URL detection](http://ieeexplore.ieee.org/document/5578947/?reload=true)
+
+[solomon]: https://en.wikipedia.org/wiki/Telephone_numbers_in_the_Solomon_Islands
+[res]: http://ieeexplore.ieee.org/document/5578947/?reload=true
+
+## communities browser extension :gift:
+
+Every community that I meet these days wants to use its own different app to manage things, or alternatively create its own special forum and so on.
+
+For instance:
+
+-   The dev-s community runs its own Slack channel (which is great) but wants its own discussion forum.
+-   ReRoll Bangalore has its own WhatsApp/Telegram group (which is great again) but lacks a discussion forum.
+
+The idea is to make a Chrome/Firefox extension that:
+
+1.  lets you create a community (you get a unique id + social links you can give out)
+2.  lets others submit their identity to the community tracker via the extension.
+
+The extension has the following features:
+
+1.  Allows you to add "communities" you belong to
+2.  Allows you to add your identity handles that you own. So you can specify multiple twitter/reddit/facebook/HN/... accounts that you own
+3.  Link communities with your identities. So you can share your reddit handle by joining a community.
+4.  Highlight a community member while browsing the site. So if you are browsing hacker news and have added yourselves to the community listing, you can see other discussions highlighted from other members.
+
+The entire extension lives in browser space and localstorage. The backend just maintains a mapping of community id to profile IDs, which is synced once in a while. A community code might be required to add yourselves to the community.
+
+This is like Reddit flairs, but flairs only work on a single subreddit, this is intended to work across various discussion forums.
+
+
+## onioncannon
+
+Similar to [pushjet](https://pushjet.io/), but with the following idea:
+
+- Push all app notifications to other clients
+- Add/Remove clients at will
+- All traffic reaches a central server
+- All traffic is encrypted at source, but the uuid of the client can be used to talk to them
+
+### Use Case
+
+- I wanted to build a simple "auto-type OTP" Chrome Extension.
+- Without using pushbullet (Should be FOSS)
+- Without giving my OTP to anyone else (should be E2E)
+- Without having to worry about NATs and firewalls (should be a publicly hosted service)
+
+Somewhat related to the idea is http://github.com/decant, which allows me to build the "read SMS" part of it.
+
+What I envision is essentially a simple client-registration protocol:
+
+- `[Device A]` generates a UUID.
+- `[Device B]` generates a UUID.
+- B generates a QR code using the UUID.
+- A scans the QR code to get the UUID and pushes a sample event.
+- B gets the event, and can decide to push events to A if needed.
+
+The QR code includes:
+
+1. The UUID of a client
+2. A public key fingerprint of the PGP key of the client
+3. Metadata containing:
+- Public Key
+- URL where the public key can be found
+- Misc Client Information
+
+Any client who scans this can now start sending encrypted data to the client.
+
+The nice thing is that you can transmit data however between these two parties, once it is encrypted. Use GCM/pusher if you wish.
+
+
+## PyPi Notifier
+
+:rocket:
+
+Problem: No way to get updates when any package I am using has a new release.
+
+Solution:
+
+- Sends an email when a package you are watching updates
+- Get starred package list from github
+- Webhooks are not possible
+- PyPi -> GitHub mapping is impossible to maintain
+- Parse PyPi RSS Feed
+- Get list of packages updated and mail people
+- Maybe parse package name from setup.py
+- Allow uploading requirements.txt as well perhaps.
+
+
+### Sources
+
+Once it has your GitHub credentials:
+
+- Starred github repos that are also on PyPi
+- packages menetioned in setup.py and requirements.txt files from my own projects
+- Allow someone to upload a requirements.txt and use that as source
+- Parse the PyPi RSS Feed to get complete updates
+
+All the sources are merged together.
+
+### Notifications
+
+- Maybe have a curated twitter account that tweets about releases for the top 10%
+  packages.
+- Create a personal RSS feed for every user
+- Send out emails (configurable) for every release.
+- Optional direct tweets as well?
+
+:rocket: [Dependabot](https://dependabot.com/), [Renovate](https://github.com/renovatebot/renovate)
+
 
 ---
 
