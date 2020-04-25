@@ -2,6 +2,15 @@
 >
 > -   [swombat](https://news.ycombinator.com/item?id=250793)
 
+**Legend**
+
+-   ✨ - Favorite Ideas. I really like this, and you could possible build a company of some of these.
+-   💩 - Not all ideas are great. These are things I thought might work at one point, but no longer consider worth building. I don't remove such ideas from the repo, because I think all ideas are worth learning from.
+-   🎁 - I'd love to help you build this, consider this like a bounty. You'll get a personal postcard from me for building something on this list.
+-   🚀 Someone (might be me) built this!
+-   🚧 There is a work-in-progress implementation.
+-   👩‍🔬 Research ideas
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -58,16 +67,7 @@
 
 This is a open repository of personal ideas. Some of these are based on personal interactions, bug reports, and discussions I've had with lots of people. I've tried to give credit wherever possible. I also try to reference similar/existing projects that might relate to the idea, so if you know of something that is interesting in that space, file a PR or send me a link.
 
-Some ideas are annotated with emojis:
-
--   ✨ - Favorite Ideas. I really like this, and you could possible build a company of some of these.
--   💩 - Not all ideas are great. These are things I thought might work at one point, but no longer consider worth building. I don't remove such ideas from the repo, because I think all ideas are worth learning from.
--   🎁 - I'd love to help you build this, consider this like a bounty. You'll get a personal postcard from me for building something on this list.
--   🚀 Someone (might be me) built this!
--   🚧 There is a work-in-progress implementation.
--   👩‍🔬 Research ideas
-
-All of the above are just indicative. Make something people want is the YC motto, but sometimes you must make something for no good reason other than "just because".
+The emojis are just indicative. Make something people want is the YC motto, but sometimes you must make something for no good reason other than "just because".
 
 ## OpenBook 💩
 
