@@ -13,7 +13,7 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
 - [Introduction](#introduction)
 - [OpenBook 💩](#openbook-)
@@ -27,7 +27,7 @@
 - [🚀 Newsletters for GitHub](#-newsletters-for-github)
 - [🚀Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
 - [Pluggable Notify Daemon for Linux](#pluggable-notify-daemon-for-linux)
-- [✨🎁 Telegram To RSS](#-telegram-to-rss)
+- [🚀Telegram To RSS](#telegram-to-rss)
 - [🎁 Disable Local Fonts Extension](#-disable-local-fonts-extension)
 - [Arch Linux Package Build System](#arch-linux-package-build-system)
 - [Hacker News Research Bot](#hacker-news-research-bot)
@@ -240,7 +240,7 @@ for each of them. (GMail notifications might open your mail client if you click 
 
 Keep it pluggable, otherwise its of no use.
 
-## ✨🎁 Telegram To RSS
+## 🚀Telegram To RSS
 
 There are quite a lot of Telegram channels that are popping up these days that I really like using.
 
@@ -267,6 +267,8 @@ to channels, while users can join channels on their own. This makes a world
 of difference in that this doesn't require perission from the channel admins anymore.
 
 You could likely get this sponsored from the Internet Archive if you get something up and running.
+
+*UPDATE*: Turns out [there is an existing `TelegramBridge` in RSS-Bridge](https://github.com/RSS-Bridge/rss-bridge/pull/1175) that just scrapes HTML instead. I've enabled it on my RSS-bridge server, so you can try it out at <https://rss-bridge.bb8.fun/#bridge-Telegram>.
 
 Related links:
 
