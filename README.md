@@ -1036,6 +1036,24 @@ All the sources are merged together.
 🚀 [Dependabot](https://dependabot.com/), [Renovate](https://github.com/renovatebot/renovate)
 
 
+## codenames-ai
+
+Codenames is a word game, and you can see the rules here: https://czechgames.com/files/rules/codenames-rules-en.pdf
+
+The interesting challenge in the game is word-association:grinning:
+
+- finding a single word that
+- relates to one-or-more of words in Set A (Your color)
+- while staying away from words in Set B (Your opponent's color)
+- and staying far far away from a single word in Set C (Assasin)
+
+The remaining AI is much simpler: Given a word and a count,
+
+- find the closest words from Set (A+B+C)
+
+I think using some clustering algorithms on top of word2vec should give decent results. Maybe GPT-3 can do this much more easily.
+
+
 ---
 
 ## Licence
