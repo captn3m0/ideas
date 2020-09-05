@@ -365,6 +365,8 @@ the same result, proxied via our servers.
 This is not intended to be used for actual usage, just research purposes. Will help make the
 UIDAI (and other GoI) websites accessible to a much larger community.
 
+_Update_: I made [a version of this](https://github.com/captn3m0/sanskari-proxy), the one that comes with the least legal issues.
+
 ## Helm Charts for Self-Hosting
 
 I self-host a lot of my services, and it would be great to take my existing services, and convert them
