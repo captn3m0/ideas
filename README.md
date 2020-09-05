@@ -17,13 +17,10 @@ The :poop: ideas (I thought might work at one point, but no longer consider wort
 **Table of Contents**
 
 - [Introduction](#introduction)
-- [OpenBook 💩](#openbook-)
-- [💩 iStalk](#-istalk)
 - [✨🎁 Collaborative Bookmarking](#-collaborative-bookmarking)
 - [🚀Lightspeed for Chrome](#lightspeed-for-chrome)
 - [Facebook Analytics](#facebook-analytics)
 - [API for Workflowy](#api-for-workflowy)
-- [💩Lettersafe](#lettersafe)
 - [Email on top of keybase](#email-on-top-of-keybase)
 - [🚀 Newsletters for GitHub](#-newsletters-for-github)
 - [🚀Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
@@ -50,7 +47,6 @@ The :poop: ideas (I thought might work at one point, but no longer consider wort
 - [Calendar Feed for Event Websites](#calendar-feed-for-event-websites)
 - [SVG to PNG on the Edge](#svg-to-png-on-the-edge)
 - [NammaBescom OCR/Overlay Bot](#nammabescom-ocroverlay-bot)
-- [💩 nofollow enforcer](#-nofollow-enforcer)
 - [🎁 Mars: Terraform Remote HTTP Backend with End-to-End encryption](#-mars-terraform-remote-http-backend-with-end-to-end-encryption)
 - [🎁 iOS OPDS File Provider](#-ios-opds-file-provider)
 - [iOS \*sonic File Provider](#ios-%5Csonic-file-provider)
@@ -60,6 +56,7 @@ The :poop: ideas (I thought might work at one point, but no longer consider wort
 - [🎁 communities browser extension](#-communities-browser-extension)
 - [onioncannon](#onioncannon)
 - [🚀PyPi Notifier](#pypi-notifier)
+- [codenames-ai](#codenames-ai)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
