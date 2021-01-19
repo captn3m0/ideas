@@ -57,6 +57,7 @@ The :poop: ideas (I thought might work at one point, but no longer consider wort
 - [onioncannon](#onioncannon)
 - [🚀PyPi Notifier](#pypi-notifier)
 - [codenames-ai](#codenames-ai)
+- [Verifiable Code Execution on AWS Lambda](#verifiable-code-execution-on-aws-lambda)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
