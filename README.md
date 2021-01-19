@@ -953,6 +953,23 @@ The remaining AI is much simpler: Given a word and a count,
 
 I think using some clustering algorithms on top of word2vec should give decent results. Maybe GPT-3 can do this much more easily.
 
+## Verifiable Code Execution on AWS Lambda
+
+A common problem in the privacy world is that when a service says: we need your data, but promise we won't store it - you have to take them at their word. This is a common problem. Signal for eg, hashes your contacts, and sends them to their cloud servers to see which of your contacts are on Signal. They manage to do that by relying on Intel SGX, which signs the code running on AWS and the Signal app validating that signature to ensure that the code that's processing your contacts isn't doing anything nefarious.
+
+However, there is another trusted piece of infrastructure that can be used to achieve a slightly lower degree of trust. Here's how you do it:
+
+1. AWS Lambda is "verifiable infrastructure". You can fetch the code and verify that it's the same code as what you've provided elsewhere (as a reproducible build for eg)
+2. We create a lambda for trusted-code-execution (say collecting hashes of your contact list, matching them against a bloom filter). The code isn't supposed to log these contacts, or save them in any way. We also provide this exact code elsewhere, for people to validate and review.
+3. You create a AWS IAM keypair that has permissions to get each revision of the lambda code, validate the corresponding API endpoint against this lambda.
+4. Instead of using a custom-domain API Gateway, you instead use the AWS execute lambda endpoint (The ones that look like https://api-id.execute-api.region.amazonaws.com/STAGE). The request directly reaches the lambda - verifiably (I think).
+5. Publish the keys for the AWS IAM keypair that was created above.
+
+Anyone in the world can then call up the Lambda management API to validate the code at any time with these credentials. If you trust AWS Lambda and IAM, there is a verifiable trust in the code that is running on that lambda and that is processing your contacts. If/when AWS supports Intel SGX on Lambda (or Nitro Enclaves), additional guarantees can be provided by using that.
+
+Links: https://news.ycombinator.com/item?id=25837281, https://stackoverflow.com/a/65798291/368328
+
+Not sure what the actual product here would be. Perhaps a toolkit that makes it easy to setup such infrastructure? Perhaps a global custody chain that acts as verifying nodes?
 
 ---
 
