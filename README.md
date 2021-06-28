@@ -12,9 +12,9 @@
 
 The :poop: ideas (I thought might work at one point, but no longer consider worth building) are at [BADIDEAS.md](BADIDEAS.md).
 
+<!-- npx  doctoc --github --maxlevel 2  README.md -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
 
 - [Introduction](#introduction)
 - [✨🎁 Collaborative Bookmarking](#-collaborative-bookmarking)
@@ -58,6 +58,10 @@ The :poop: ideas (I thought might work at one point, but no longer consider wort
 - [🚀PyPi Notifier](#pypi-notifier)
 - [codenames-ai](#codenames-ai)
 - [Verifiable Code Execution on AWS Lambda](#verifiable-code-execution-on-aws-lambda)
+- [Browser Extension: youtube-cue](#browser-extension-youtube-cue)
+- [Stitch EPUBs from multiple URLs](#stitch-epubs-from-multiple-urls)
+- [OpenAPI Specification Generator from HTTP Archives](#openapi-specification-generator-from-http-archives)
+- [Open ISIN API](#open-isin-api)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -971,6 +975,54 @@ Anyone in the world can then call up the Lambda management API to validate the c
 Links: https://news.ycombinator.com/item?id=25837281, https://stackoverflow.com/a/65798291/368328
 
 Not sure what the actual product here would be. Perhaps a toolkit that makes it easy to setup such infrastructure? Perhaps a global custody chain that acts as verifying nodes?
+
+## Browser Extension: youtube-cue
+
+A browser extension of https://github.com/captn3m0/youtube-cue/ would be nice, where you could click a button on the YouTube URL for a video to download a CUE sheet.
+
+## Stitch EPUBs from multiple URLs
+
+I wrote https://github.com/captn3m0/pystitcher, which does a great job with declaratively stitching PDFs. It would be nice if something similar could be done for EPUBs. So you create an EPUB by writing down a markdown file:
+
+```markdown
+title: Thunder and Lightning
+author: Scott Rain
+summary: Book Summary
+
+# Thunder and Lightning
+
+# [Cover](cover.jpg)
+
+# [Chapter 1: Everything goes south](https://example.com/ch1.html)
+# [Chapter 2: Lightning](https://example.com/ch2.html)
+```
+
+Take the input, run it through a readability engine, and generate proper EPUBs out of it. 
+
+See some related stuff:
+
+- I wrote [url-to-epub](https://github.com/captn3m0/url-to-epub), which works nicely for single-URL books.
+- [percollate](https://github.com/danburzo/percollate) is a command-line tool that turns web pages into beautifully formatted PDF, EPUB, or HTML files.
+- pandoc, obviously
+
+## OpenAPI Specification Generator from HTTP Archives
+
+HAR is a JSON-formatted archive file format for logging of a web browser's interaction with a site. Lots of tools already support HAR format, including Chrome, Firefox, Fiddler, Charles Proxy, ZAP etc. There are [JSON schema generators](https://github.com/stoplightio/json-schema-generator) that will take a JSON object and generate a OpenAPI schema accordingly. The usecase is:
+
+1. Browse around a website or mobile app, which happens to have a JSON API.
+2. Save a HAR file from your browser or proxy.
+3. Generate a OpenAPI Specification file.
+
+It doesn't have to be perfect, but the following can be easily adapted for:
+
+1. List of various routes
+2. Authentication scheme
+
+I [wrote a few reverse-engineered OpenAPI Specifications recently](https://captnemo.stoplight.io/) and this would have been helpful.
+
+## Open ISIN API
+
+Based on https://github.com/captn3m0/india-isin-data.
 
 ---
 
