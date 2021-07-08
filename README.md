@@ -12,7 +12,7 @@
 
 The :poop: ideas (I thought might work at one point, but no longer consider worth building) are at [BADIDEAS.md](BADIDEAS.md).
 
-<!-- npx  doctoc --github --maxlevel 2  README.md -->
+<!-- npx  doctoc --github --update-only --maxlevel 2 README.md -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -1017,6 +1017,8 @@ It doesn't have to be perfect, but the following can be easily adapted for:
 
 1. List of various routes
 2. Authentication scheme
+
+Edit: [akita-cli](https://github.com/akitasoftware/akita-cli#about-this-repo) already supports this, but I haven't tried this yet.
 
 I [wrote a few reverse-engineered OpenAPI Specifications recently](https://captnemo.stoplight.io/) and this would have been helpful.
 
