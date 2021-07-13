@@ -57,7 +57,7 @@ The :poop: ideas (I thought might work at one point, but no longer consider wort
 - [onioncannon](#onioncannon)
 - [🚀PyPi Notifier](#pypi-notifier)
 - [codenames-ai](#codenames-ai)
-- [Verifiable Code Execution on AWS Lambda](#verifiable-code-execution-on-aws-lambda)
+- [Verifiable Code Execution on Cloud](#verifiable-code-execution-on-cloud)
 - [Browser Extension: youtube-cue](#browser-extension-youtube-cue)
 - [Stitch EPUBs from multiple URLs](#stitch-epubs-from-multiple-urls)
 - [OpenAPI Specification Generator from HTTP Archives](#openapi-specification-generator-from-http-archives)
@@ -958,9 +958,9 @@ The remaining AI is much simpler: Given a word and a count,
 
 I think using some clustering algorithms on top of word2vec should give decent results. Maybe GPT-3 can do this much more easily.
 
-## Verifiable Code Execution on AWS Lambda
+## Verifiable Code Execution on Cloud
 
-A common problem in the privacy world is that when a service says: we need your data, but promise we won't store it - you have to take them at their word. This is a common problem. Signal for eg, hashes your contacts, and sends them to their cloud servers to see which of your contacts are on Signal. They manage to do that by relying on Intel SGX, which signs the code running on AWS and the Signal app validating that signature to ensure that the code that's processing your contacts isn't doing anything nefarious.
+A common problem in the privacy world is that when a service says: we need your data, but promise we won't store it - you have to take them at their word. This is a common problem. Signal for eg, hashes your contacts, and sends them to their cloud servers to see which of your contacts are on Signal. They manage to do that [by relying on Intel SGX](https://signal.org/blog/private-contact-discovery/), which signs the code running on AWS and the Signal app validating that signature to ensure that the code that's processing your contacts isn't doing anything nefarious.
 
 However, there is another trusted piece of infrastructure that can be used to achieve a slightly lower degree of trust. Here's how you do it:
 
@@ -971,6 +971,8 @@ However, there is another trusted piece of infrastructure that can be used to ac
 5. Publish the keys for the AWS IAM keypair that was created above.
 
 Anyone in the world can then call up the Lambda management API to validate the code at any time with these credentials. If you trust AWS Lambda and IAM, there is a verifiable trust in the code that is running on that lambda and that is processing your contacts. If/when AWS supports Intel SGX on Lambda (or Nitro Enclaves), additional guarantees can be provided by using that.
+
+Lambda could quite possibly be replaced by similar services: Fargate/Cloud Run.
 
 Links: https://news.ycombinator.com/item?id=25837281, https://stackoverflow.com/a/65798291/368328
 
@@ -1018,9 +1020,13 @@ It doesn't have to be perfect, but the following can be easily adapted for:
 1. List of various routes
 2. Authentication scheme
 
-Edit: [akita-cli](https://github.com/akitasoftware/akita-cli#about-this-repo) already supports this, but I haven't tried this yet.
-
 I [wrote a few reverse-engineered OpenAPI Specifications recently](https://captnemo.stoplight.io/) and this would have been helpful.
+
+Edit: Found a few projects:
+
+- [akita-cli](https://github.com/akitasoftware/akita-cli#about-this-repo) already supports this, but I haven't tried this yet.
+- <https://github.com/dcarr178/har2openapi>
+
 
 ## Open ISIN API
 
