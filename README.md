@@ -62,6 +62,7 @@ The :poop: ideas (I thought might work at one point, but no longer consider wort
 - [Stitch EPUBs from multiple URLs](#stitch-epubs-from-multiple-urls)
 - [OpenAPI Specification Generator from HTTP Archives](#openapi-specification-generator-from-http-archives)
 - [Open ISIN API](#open-isin-api)
+- [A Survey of the Electron Supply Chain](#a-survey-of-the-electron-supply-chain)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1031,6 +1032,32 @@ Edit: Found a few projects:
 ## Open ISIN API
 
 Based on https://github.com/captn3m0/india-isin-data.
+
+## A Survey of the [Electron](https://www.electronjs.org/) Supply Chain
+
+Electron applications are easy to build, but hard to maintain:
+
+- using npm means the dependency tree is limitless
+- using electron means most applications are static bundles containing:
+	- a full chromium runtime
+	- a copy of ffmpeg
+	- electron
+- Chrome bugfixes take time to reach electron.
+- Older versions of electrons provided a full Node.js environment in the renderer process.
+
+The [process model](https://www.electronjs.org/docs/tutorial/process-model) has improved over time, but it's not perfect. There were 3 context isolation bypasses reported in 2020.
+
+A survey of existing applications might be worthwhile to see what's the lag between:
+
+1. A bug being reported in chrome
+2. A security fix in electron
+
+reaching end users.
+
+I did some work on it:
+
+- <https://github.com/captn3m0/which-electron>
+- <https://github.com/captn3m0/electron-fingerprints/>
 
 ---
 
