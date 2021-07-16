@@ -5,10 +5,12 @@
 **Legend**
 
 -   ✨ - Favorite Ideas. I really like this, and you could possible build a company of some of these.
--   🎁 - I'd love to help you build this, consider this like a bounty. You'll get a personal postcard from me for building something on this list.
+-   🎁 - I'd love to help you build this, consider this like a bounty
 -   🚀 Someone (might be me) built this!
 -   🚧 There is a work-in-progress implementation.
 -   👩‍🔬 Research ideas
+
+:heart: You'll get a personal postcard from me for building something on this list
 
 The :poop: ideas (I thought might work at one point, but no longer consider worth building) are at [BADIDEAS.md](BADIDEAS.md).
 
