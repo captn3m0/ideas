@@ -1061,6 +1061,10 @@ I did some work on it:
 - <https://github.com/captn3m0/which-electron>
 - <https://github.com/captn3m0/electron-fingerprints/>
 
+## 2fa.wiki
+
+A community maintained machine-readable wiki for information about 2fa recovery workflows for various services. 2FA recovery workflows are often undocumented, so this would be a good thing to document across the internet.
+
 ---
 
 ## Licence
