@@ -90,7 +90,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [Open ISIN API](#open-isin-api)
 - [A Survey of the Electron Supply Chain](#a-survey-of-the-electron-supply-chain)
 - [2fa.wiki](#2fawiki)
-- [Boardgame Rulebook Translation Guide :under_construction:](#boardgame-rulebook-translation-guide-under_construction)
+- [Boardgame Rulebook Translation Guide :construction:](#boardgame-rulebook-translation-guide-construction)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1305,7 +1305,7 @@ A community maintained machine-readable wiki for information about 2fa recovery
 workflows for various services. 2FA recovery workflows are often undocumented,
 so this would be a good thing to document across the internet.
 
-## Boardgame Rulebook Translation Guide :under_construction:
+## Boardgame Rulebook Translation Guide :construction:
 
 Translating technical guides (such as boardgame rulebooks) to Hindi is quite
 tough. There should be a standard guide that documents common terms so as to
