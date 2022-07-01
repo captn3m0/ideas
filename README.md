@@ -1305,12 +1305,42 @@ A community maintained machine-readable wiki for information about 2fa recovery
 workflows for various services. 2FA recovery workflows are often undocumented,
 so this would be a good thing to document across the internet.
 
+Having this machine-readable will be even better.
+
 ## Boardgame Rulebook Translation Guide :construction:
 
 Translating technical guides (such as boardgame rulebooks) to Hindi is quite
 tough. There should be a standard guide that documents common terms so as to
 avoid confusion between various games using different translations for common
 boardgaming terms.
+
+## A Practical MRNL Service (Mobile Number Revocation List)
+
+**Note**: [TRAI](https://trai.gov.in/) (India's Telecom Regulator) publishes a [Mobile Number Revocation List][mrnl] every month. It consists of any mobile
+numbers that were disconnected this month. The list is public, and meant to be used by Indian businesses and service providers to protect
+against account takeovers once these mobile numbers are re-assigned. The list is published in JSON/Excel/PDF formats, and is accessible over
+an API.
+
+As it stands, each business must write their own code to actually use this list. A usable implementation of this list would be
+some service that could do one or more of the following:
+
+1. Publish all revocations on a public queue, such as a publically accessible SNS topic, Amazon EventBridge, or a NATS/Kafka stream. Any business can subscribe to this, and consume it easily.
+2. Let any business subscribe to a webhook where such lists are published.
+3. Let businesses submit their existing customer dataset on a regular basis, so you can provide targeted webhooks to each business - you only get notified if your customer is impacted.
+4. A Bulk-Lookup API that takes an existing customer dataset, intersects it against this month's revocation list and returns a response of impacted customers.
+5. A historic database lookup that takes customer account creation dates along with mobile numbers as input, and returns impacted customers (mobile numbers that have been revoked since the account was created). This is important because a business might already have vulnerable customers
+
+### Security and Privacy Considerations
+
+- You do not want to store a copy of any business's customer database - relevant for (3). Especially do not link it to any identifiable Business Name. Finding a business from the list of mobile numbers might still be trivial however (if you know a subset of users for eg).
+- Support bloom filters for bulk lookup APIs to reduce the request payload.
+- Look at [Private Set Intersection](https://en.wikipedia.org/wiki/Private_set_intersection) to make bulk-lookups completely anonymous (The server learns nothing about your customer dataset).
+- Provide clear guidance as to what guarantees the MRNL provides, and what businesses should be doing after getting notified. This might be very important for 2FA considerations for example, and require complete account suspension in cases where the mobile number is the only customer identifier.
+
+### Cost Considerations
+
+* Running a public SNS/EventBridge/PubSub service with third-party subscribers has a low enough cost, since you're responsible for reasonable egress and publishing costs.
+* Running webhooks at scale does get costly, due to network costs, so don't do this unless you can monetize it.
 
 ---
 
@@ -1325,3 +1355,5 @@ postcard if you ship one of these.
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
 There is a list of other similar lists-of-ideas at [SIMILAR.md](SIMILAR.md)
+
+[mrnl]: https://mnrl.trai.gov.in "Mobile Number Revocation List Portal  by TRAI"
