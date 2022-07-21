@@ -18,7 +18,7 @@ list
 The :poop: ideas (I thought might work at one point, but no longer consider
 worth building) are at [BADIDEAS.md](BADIDEAS.md).
 
-<!-- npx  doctoc --github --update-only --maxlevel 2 README.md -->
+<!-- npx doctoc --github --update-only --maxlevel 2 README.md -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -71,6 +71,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [A Survey of the Electron Supply Chain](#a-survey-of-the-electron-supply-chain)
 - [2fa.wiki](#2fawiki)
 - [Boardgame Rulebook Translation Guide :construction:](#boardgame-rulebook-translation-guide-construction)
+- [Probe the Great Indian Firewall](#probe-the-great-indian-firewall)
 - [A Practical MRNL Service (Mobile Number Revocation List)](#a-practical-mrnl-service-mobile-number-revocation-list)
 - [Licence](#licence)
 
@@ -1294,6 +1295,23 @@ Translating technical guides (such as boardgame rulebooks) to Hindi is quite
 tough. There should be a standard guide that documents common terms so as to
 avoid confusion between various games using different translations for common
 boardgaming terms.
+
+## Probe the Great Indian Firewall
+
+The Great Indian Firewall is what blocks Indian Government websites from being accessed outside of India. 
+This is bad for multiple reasons, including accessibility, archivability, and usability. There's multiple
+ways this is applied, inculding:
+
+1. GeoDNS based blocks (DNS resolves to a blocked IP outside India)
+2. IP Address based blocks (Requests from an ASN outside India are dropped)
+3. Block ASNs from Hosting Service Providers
+
+Take an existing corpus of Indian Government websites (such as [mine](https://gist.github.com/captn3m0/4f3da8f07fe884e62bfab3ac85616936))
+, and probe it in multiple ways to detect differences between the
+"normal response" (What you'd get from an Indian residential IP) and a "blocked response" (what you see from outside India).
+Take care to account for residential v/s cloud IPs, since those are commonly blocked.
+
+The outcome should be a self-updating report/dashboard that documents the various sites that are blocked outside India.
 
 ## A Practical MRNL Service (Mobile Number Revocation List)
 
