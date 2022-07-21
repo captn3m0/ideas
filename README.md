@@ -49,7 +49,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [CardDAV on Slack](#carddav-on-slack)
 - [✨ UPI on Desktop](#-upi-on-desktop)
 - [Twitter Adventure Maker](#twitter-adventure-maker)
-- [Playstore RSS Feed for Version Updates](#playstore-rss-feed-for-version-updates)
+- [:rocket: Playstore RSS Feed for Version Updates](#rocket-playstore-rss-feed-for-version-updates)
 - [Calendar Feed for Event Websites](#calendar-feed-for-event-websites)
 - [SVG to PNG on the Edge](#svg-to-png-on-the-edge)
 - [NammaBescom OCR/Overlay Bot](#nammabescom-ocroverlay-bot)
@@ -638,10 +638,11 @@ One line pitch: Make a simple webapp that uses the Twitter UI to generate Play
 your own Adventures. For bonus points, add support for
 [Twine](https://twinery.org/) or perhaps DNML to let people create these easily.
 
-## Playstore RSS Feed for Version Updates
+## :rocket: Playstore RSS Feed for Version Updates
 
-An RSS feed to follow updates on applications would be nice. Details:
-https://github.com/RSS-Bridge/rss-bridge/issues/1352.
+An RSS feed to follow updates on applications would be nice. See [this issue](https://github.com/RSS-Bridge/rss-bridge/issues/1352).
+
+**:rocket:** RSS Bridge now has a Google Play Store Bridge: https://github.com/RSS-Bridge/rss-bridge/pull/2110
 
 ## Calendar Feed for Event Websites
 
