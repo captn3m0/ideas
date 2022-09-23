@@ -266,8 +266,7 @@ Keep it pluggable, otherwise its of no use.
 This is fairly well solved at this point, see the following:
 
 - [There is an existing `TelegramBridge` in RSS-Bridge](https://github.com/RSS-Bridge/rss-bridge/pull/1175)
-  that just scrapes telegram HTML. I've enabled it on my RSS-bridge server, so
-  you can try it out at <https://rss-bridge.bb8.fun/#bridge-Telegram>.
+  that just scrapes telegram HTML.
 - https://docs.rsshub.app/en/social-media.html#telegram
 - https://t.me/Channel2RSSBot
 - https://notifier.in/ (Free for 100 messages/month, paid beyond that)
