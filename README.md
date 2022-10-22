@@ -674,6 +674,8 @@ Think of how powerful this could be:
 A somewhat relevant thing: https://www.bannerbear.com/. There are more details
 on https://github.com/captn3m0/ideas/issues/11 if this sounds interesting.
 
+[resvg](https://github.com/yisibl/resvg-js) is a library that should fit nicely for this usecase.
+
 ## NammaBescom OCR/Overlay Bot
 
 A bot that waits for tweets from
