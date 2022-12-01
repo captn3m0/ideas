@@ -832,6 +832,12 @@ The benefits I can see are these:
    for modern board games. Everyone knows you must buy the Transports in
    Monopoly, but what is the optimum strategy for Settlers of Catan?
 
+Related Projects:
+
+- [Open Spiel](https://github.com/deepmind/open_spiel), [Docs](https://openspiel.readthedocs.io/en/latest/index.html)
+- [Ludii Games](https://ludii.games/contact.php)
+- [RLCard](https://rlcard.org/overview.html)
+
 Work so far:
 
 - https://github.com/captn3m0/sushigo/
