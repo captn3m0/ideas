@@ -1056,6 +1056,10 @@ Similar to [pushjet](https://pushjet.io/), but with the following idea:
 - All traffic is encrypted at source, but the uuid of the client can be used to
   talk to them
 
+### Related:
+
+- https://www.ockam.io/
+
 ### Use Case
 
 - I wanted to build a simple "auto-type OTP" Chrome Extension.
