@@ -25,9 +25,9 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [Introduction](#introduction)
 - [✨🎁 Collaborative Bookmarking](#-collaborative-bookmarking)
 - [🚀Lightspeed for Chrome](#lightspeed-for-chrome)
-- [Facebook Analytics](#facebook-analytics)
+- [Personal Social Media Analytics](#personal-social-media-analytics)
 - [API for Workflowy](#api-for-workflowy)
-- [Email on top of keybase](#email-on-top-of-keybase)
+- [Email on top of keybase (or other social-media-proofs)](#email-on-top-of-keybase-or-other-social-media-proofs)
 - [🚀 Newsletters for GitHub](#-newsletters-for-github)
 - [🚀Hacking via OAauth tokens](#hacking-via-oaauth-tokens)
 - [Pluggable Notify Daemon for Linux](#pluggable-notify-daemon-for-linux)
@@ -71,6 +71,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [A Survey of the Electron Supply Chain](#a-survey-of-the-electron-supply-chain)
 - [2fa.wiki](#2fawiki)
 - [Boardgame Rulebook Translation Guide :construction:](#boardgame-rulebook-translation-guide-construction)
+- [Simple Firejail/Bubblewrap wrapper for AUR/NPM/pipx packages](#simple-firejailbubblewrap-wrapper-for-aurnpmpipx-packages)
 - [Probe the Great Indian Firewall](#probe-the-great-indian-firewall)
 - [A Practical MRNL Service (Mobile Number Revocation List)](#a-practical-mrnl-service-mobile-number-revocation-list)
 - [Licence](#licence)
@@ -129,10 +130,13 @@ easier to port the webextension version to Chrome itself.
 _Update_: [@tallpants](https://github.com/tallpants) made this:
 https://github.com/tallpants/lightspeed
 
-## Facebook Analytics
+## Personal Social Media Analytics
 
-I like the analytics that WolframAlpha provides for Facebook. Except that they
-are not really that useful. I'd like an easy query interface that let me
+WolframAlpha launched a [Personal Analytics](https://www.pcmag.com/news/hands-on-wolfram-alphas-personal-analytics-for-facebook)
+feature for your facebook data back in 2013. It is no longer accessible, but
+it generated some stock analytics and boring graphs. 
+
+They weren't really that helpful. I'd like an easy query interface that let me
 "filter" data points, and get back open-data via the Graph API. This means, for
 eg, getting the most liked music artist among a subset of my friends. The
 interface I'm thinking of right now is like Gapminder, which allows you to
@@ -140,6 +144,11 @@ interface I'm thinking of right now is like Gapminder, which allows you to
 
 A recommendation engine built on top of my facebook data is a good idea, I
 think.
+
+Since the idea is a decade old, it seems everyone has given up on using APIs for this kind of work, and modern
+incarnations of this idea are all based on data-export-dumps. See the following for example:
+
+- https://github.com/skglas/tweetarchive-to-sqlite
 
 ## API for Workflowy
 
@@ -149,35 +158,25 @@ for me to access my own data. I think workflowy is a great tool that could
 become a lot better if there were a way for developers to hook into it. (For
 example using workflowy as a data-backend for a todo-app).
 
-## Email on top of keybase
+## Email on top of keybase (or other social-media-proofs)
 
-Keybase has a cool API. I wonder if its possible to build an actual email
-service on top of keybase?
+Replace Keybase with [Keyoxide](https://keyoxide.org/), [Keys.pub](https://keys.pub/), [WKD](https://wiki.gnupg.org/WKD),
+or [rel=pgpkey](https://indieweb.org/OpenPGP).
 
-The original idea was from before Keybase had a chat feature, and I wanted to
-build an email service that used keybase to send and receive messages. Would
-have turned out similar to Keybase Chat.
+Make it easier to discover encryption keys for users via email plugins
+that pickup keys from one of the above sources.
 
-How I'd approach it today is to use Keybase Social Graph for encrypting emails
-and make it easier via plugins/extensions. The ideal flow would be:
+1.  Compose an email to name@username.dev.
+2.  Extension pops up: "Hey, I found a key for this email address
+    published under a social proof for twitter/@username as well as on the website
+    username.dev.
+3.  If user clicks yes, fetch the key, and use that to encrypt your mail.
 
-Use the Keybase Social Graph for encrypting emails and make it easier via
-plugins/extensions. The ideal flow would be:
+**Caveats**: PGP is pretty terrible, and does not work in practice. It is probably
+better to just use Signal or Wire or something else.
 
-1.  Login to GMail
-2.  Compose an email to me@captnemo.in
-3.  Extension pops up: "Hey, looks like this user is on Keybase already as
-    keybase.io/captn3m0. Would you like to encrypt this email?
-4.  If user clicks yes, do a keybase auth and follow the user as well, perhaps?
-    (not sure if possible)
-5.  Also give user an option to "Encrypt all emails sent to users with more than
-    X followers)" or something similar...
-
-Doing the same thing on the receiving side is trickier though, but I like the
-idea of using Keybase to discover anyone's public keys instead of the standard
-Web of Trust.
-
-A Keybase plugin for Thunderbird would be similar in scope.
+Once [Signal launches usernames](https://www.theverge.com/2023/11/9/23953603/signal-username-feature-test-phone-numbers-privacy-security-pre-beta-2024-launch),
+we should find a way to link social-media-proofs to signal usernames instead.
 
 ## 🚀 Newsletters for GitHub
 
@@ -1307,6 +1306,14 @@ Translating technical guides (such as boardgame rulebooks) to Hindi is quite
 tough. There should be a standard guide that documents common terms so as to
 avoid confusion between various games using different translations for common
 boardgaming terms.
+
+## Simple Firejail/Bubblewrap wrapper for AUR/NPM/pipx packages
+
+I trust packages in the distro far more than random dependencies.
+It would be nice to be able to run a command with a prefix so that:
+
+It only gets access to the files and directories mentioned on the command line.
+Maybe automatically do this at install time, to wrap it.
 
 ## Probe the Great Indian Firewall
 
