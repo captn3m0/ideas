@@ -78,6 +78,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [Probe the Great Indian Firewall](#probe-the-great-indian-firewall)
 - [A Practical MRNL Service (Mobile Number Revocation List)](#a-practical-mrnl-service-mobile-number-revocation-list)
 - [A physical variable Fuzzy Clock](#a-physical-variable-fuzzy-clock)
+- [A curl impersonation proxy](#a-curl-impersonation-proxy)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1382,6 +1383,22 @@ be accurate to 15 minutes or so.
 
 I don't know what a physical version would look like, but it would be cool
 to come up with one. I am thinking of prototyping something with a e-Ink display.
+
+## A curl impersonation proxy
+
+[curl-impersonate](https://github.com/lwthiker/curl-impersonate/) is a cool
+project which patches curl to impersonate browser signatures (TLS Cipher
+Suites, TLS Cipher Order, headers etc). This lets you use curl-enabled
+code to behave as if the requests came from a browser. It doesn't run JS
+but is quite helpful for lots of usecases.
+
+A common issue with curl-impersonate is using it in applications which already
+have a HTTP Adapter, such as Faraday/Ruby or other HTTP clients. You need to
+switch the client to curl, and then LD_PRELOAD the libcurl from this project.
+
+However, most adapters already support a HTTP Proxy. It would be nice to have
+a MITM proxy that was curl-impersonate aware, so it becomes a cheap and easy
+way to run this in your existing codebase.
 
 ---
 
