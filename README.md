@@ -58,7 +58,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [NammaBescom OCR/Overlay Bot](#nammabescom-ocroverlay-bot)
 - [🎁 Mars: Terraform Remote HTTP Backend with End-to-End encryption](#-mars-terraform-remote-http-backend-with-end-to-end-encryption)
 - [🎁 iOS OPDS File Provider](#-ios-opds-file-provider)
-- [iOS \*sonic File Provider](#ios-%5Csonic-file-provider)
+- [iOS/MacOS \*sonic File Provider](#iosmacos-%5Csonic-file-provider)
 - [collaborative-bookmarking](#collaborative-bookmarking)
 - [👩‍🔬 Boardgame AI Gym](#%E2%80%8D-boardgame-ai-gym)
 - [🎁 ✨ Green/Yellow Pages](#--greenyellow-pages)
@@ -79,6 +79,14 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [A Practical MRNL Service (Mobile Number Revocation List)](#a-practical-mrnl-service-mobile-number-revocation-list)
 - [A physical variable Fuzzy Clock](#a-physical-variable-fuzzy-clock)
 - [A curl impersonation proxy](#a-curl-impersonation-proxy)
+- [A Whisper UX Design Pattern](#a-whisper-ux-design-pattern)
+- [Tareeqh pe Tareeqh](#tareeqh-pe-tareeqh)
+- [Mobile App Traffic RE Platform](#mobile-app-traffic-re-platform)
+- [One-Page RSVP Platform on Edge Compute](#one-page-rsvp-platform-on-edge-compute)
+- [One Page Event Hosting platform](#one-page-event-hosting-platform)
+- [Price Index for Indian Grocery Websites](#price-index-for-indian-grocery-websites)
+- [Bangalore Adblock Art Project](#bangalore-adblock-art-project)
+- [PURL Canonicalization](#purl-canonicalization)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -768,7 +776,7 @@ but that would be another cool usecase. The application UI is just 2 screens:
 Brownie points for adding support for rendering ebook thumbnails, but that is
 optional.
 
-## iOS \*sonic File Provider
+## iOS/MacOS \*sonic File Provider
 
 Similarly, the [SubSonic API](http://www.subsonic.org/pages/api.jsp) is decently
 documented, reversed and re-implemented across a lot of clients. A single
@@ -1399,6 +1407,99 @@ switch the client to curl, and then LD_PRELOAD the libcurl from this project.
 However, most adapters already support a HTTP Proxy. It would be nice to have
 a MITM proxy that was curl-impersonate aware, so it becomes a cheap and easy
 way to run this in your existing codebase.
+
+## A Whisper UX Design Pattern
+
+You can "mute" triggers in most platforms, where a trigger could be a
+hashtag, or a user, or a text pattern. However, the mute is always a
+binary thing - either you see it, or you don't.
+
+A well-stated problem with muting is the echo-chamber it creates. If you
+mute all mentions of [political-term] from your feed, it could be the 
+equivalent of putting your head in the sand.
+
+A "Whisper" is a more nuanced version of this - instead of hiding away the
+mention, it is shown in a different style, or a different color. This way
+you can still see the mention, but it doesn't dominate your feed.
+
+You could also club posts with the same whisper tag, and show them together
+in the feed.
+
+I've been considering something like this for <https://news.tatooine.club>.
+
+## Tareeqh pe Tareeqh
+
+A website where you can visualize the pendency status of cases in courts,
+and see the reasons why court cases are not heard. Give it a date, and
+your case details - and it can use the existing data to estimate whether
+your case will be heard or not (and give you probabilities for reasons).
+
+## Mobile App Traffic RE Platform
+
+A platform that helps with:
+
+1. Patching an existing app to support traffic analysis.
+2. Running the app against your network.
+3. Generating HAR files using a proxy
+4. Ingesting the HAR file to generate OpenAPI Specifications
+5. Create appropriate dependency graphs for API calls
+6. Automatically generate OpenAPI Workflows for specific calls
+
+## One-Page RSVP Platform on Edge Compute
+
+https://rsvp.ngo/ was almost perfect (doesn't work any more), but I'd like
+something I can easily run on Edge compute such as Netlify Functions,
+or Cloudflare Workers. It should be a single page that lets users
+create events, and submit RSVPs, with a single function that is easily
+embeddable to an existing website.
+
+## One Page Event Hosting platform
+
+Considering building this at `host.blr.today`: A single page no-login
+website to help you host an event.
+
+1. Event Date considerations (Show weather, protests etc)
+2. No login required
+3. Semantic structure with Schema.org/Event
+4. Automatically generate banner images using something like bannerbear
+5. Embeddable RSVP Form
+6. Give a separate Payment Link.
+
+## Price Index for Indian Grocery Websites
+
+Pick a basket of common goods from Indian grocery websites, and track the
+price of these goods over time across multiple popular apps (BigBasket,
+Instamart, Blinkit, Zepto, Amazon Fresh etc).
+
+Related work:
+
+- A [Shrinkflation Database](https://www.shrinkflation.io/products)
+- [Tracking Austrian grocery prices by scraping store sites](https://mastodon.gamedev.place/@badlogic/111071396799790275).
+  // [HN Discussion](https://news.ycombinator.com/item?id=37532973), [Code](https://github.com/badlogic/heissepreise),
+  [Website](https://heisse-preise.io/).
+- [9minutes.in](https://9minutes.in/) for searching across Zepto/Blinkit/Instamart/DMart
+
+## Bangalore Adblock Art Project
+
+Commercial Hoardings were banned in Bangalore throughout COVID and for quite much later:
+https://www.deccanherald.com/india/karnataka/bengaluru/commercial-hoardings-will-not-be-allowed-in-bengaluru-says-govt-1125535.html
+
+A cool art project would be to showcase the pre-post photos of the same places
+with and without the hoardings in sight.
+
+## PURL Canonicalization
+
+[PURL](https://github.com/package-url/purl-spec) is the Package-URL format,
+letting systems encode a package (+version) into a URL scheme. However, there
+are often multiple ways to encode the same resource, such as:
+
+- pkg:docker/library/php
+- pkg:oci/php?repo_url=https://docker.io/library/php
+
+both refer to the same package, with different semantics. This makes matching PURLs
+quite difficult as two tools might encode the same package in two different ways.
+
+A canonicalization scheme would be helpful.
 
 ---
 
