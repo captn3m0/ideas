@@ -1,3 +1,6 @@
+---
+permalink: /ideas/
+---
 > There's no such thing as an original idea. Every idea worth having has been
 > had thousands of times already.
 >
@@ -74,6 +77,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [Simple Firejail/Bubblewrap wrapper for AUR/NPM/pipx packages](#simple-firejailbubblewrap-wrapper-for-aurnpmpipx-packages)
 - [Probe the Great Indian Firewall](#probe-the-great-indian-firewall)
 - [A Practical MRNL Service (Mobile Number Revocation List)](#a-practical-mrnl-service-mobile-number-revocation-list)
+- [A physical variable Fuzzy Clock](#a-physical-variable-fuzzy-clock)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1359,6 +1363,25 @@ some service that could do one or more of the following:
 
 * Running a public SNS/EventBridge/PubSub service with third-party subscribers has a low enough cost, since you're responsible for reasonable egress and publishing costs.
 * Running webhooks at scale does get costly, due to network costs, so don't do this unless you can monetize it.
+
+## A physical variable Fuzzy Clock
+
+I don't like the per-minute cadence of modern clocks. Fuzzy clocks reduce the
+accuracy of time to fix this. I use the Fuzzy Clock on KDE, which is described as:
+
+> The fuzzy clock shows the time as a spoken expression like “Twenty to six”.
+  Additionally, the fuzziness of the clock can be adjusted. At maximum
+  accurateness, it will change all five minutes, with increasing fuzziness
+  the time of changes will increase. At maximum fuzziness, it may only
+  say “Weekend”.
+
+I like having accurate clocks at home when I'm getting ready in the morning,
+but as the day goes by, I would like to care less about accurate time. I'd
+like my clock to just say "Time to Sleep" beyond 10pm, but during working hours
+be accurate to 15 minutes or so.
+
+I don't know what a physical version would look like, but it would be cool
+to come up with one. I am thinking of prototyping something with a e-Ink display.
 
 ---
 
