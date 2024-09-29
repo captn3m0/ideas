@@ -87,6 +87,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [Price Index for Indian Grocery Websites](#price-index-for-indian-grocery-websites)
 - [Bangalore Adblock Art Project](#bangalore-adblock-art-project)
 - [PURL Canonicalization](#purl-canonicalization)
+- [Nutri-score calcuator](#nutri-score-calcuator)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1500,6 +1501,16 @@ both refer to the same package, with different semantics. This makes matching PU
 quite difficult as two tools might encode the same package in two different ways.
 
 A canonicalization scheme would be helpful.
+
+## Nutri-score calcuator
+
+Given A nutrition label (and some identifier), as specified by FSSAI, generate a [Nutri-score](https://en.wikipedia.org/wiki/Nutri-Score) label.
+Make this into an API, which can cache on the identifier (Vendor+Product ID) and provide a nutri-label.
+
+Then build interesting things on top of this API:
+
+1. A browser extension that works as you shop online, showing you the nutri-score of the product.
+2. A web-app that takes your Grocery app export data (See <https://captnemo.in/personal-finance-stack/>), and generates a nutri-score for all items you buy.
 
 ---
 
