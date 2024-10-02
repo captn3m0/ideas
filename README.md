@@ -88,6 +88,8 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [Bangalore Adblock Art Project](#bangalore-adblock-art-project)
 - [PURL Canonicalization](#purl-canonicalization)
 - [Nutri-score calcuator](#nutri-score-calcuator)
+- [Indian Grocery Barcode Database](#indian-grocery-barcode-database)
+- [showtimes.in](#showtimesin)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1504,6 +1506,8 @@ A canonicalization scheme would be helpful.
 
 ## Nutri-score calcuator
 
+https://github.com/openfoodfacts/robotoff seems pretty close.
+
 Given A nutrition label (and some identifier), as specified by FSSAI, generate a [Nutri-score](https://en.wikipedia.org/wiki/Nutri-Score) label.
 Make this into an API, which can cache on the identifier (Vendor+Product ID) and provide a nutri-label.
 
@@ -1511,6 +1515,39 @@ Then build interesting things on top of this API:
 
 1. A browser extension that works as you shop online, showing you the nutri-score of the product.
 2. A web-app that takes your Grocery app export data (See <https://captnemo.in/personal-finance-stack/>), and generates a nutri-score for all items you buy.
+
+There are some apps on the market that rely on barcode -> UPC -> Lookup and
+are probably reliant on openfoodfacts but there are no good Indian barcode
+databases (hence the next idea).
+
+If a good Indian barcode database exists, this could be extended to work with
+that database instead.
+
+## Indian Grocery Barcode Database
+
+Barcodes are great, and UPC barcodes are quite decent at being identifiers for
+products across sellers. Sites like <https://www.upcindex.com> exist to lookup
+this data, but they rely on US based listings.
+
+Go through all images across all product listings on Swiggy/Zomato/Zepto/Instamart/BigBasket.
+Run OCR on these images to extract the barcode, and then provide the associated metadata
+alongside each barcode. Also include the image URLs.
+
+Submit everything to openfoodfacts.org
+
+## showtimes.in
+
+A simple website that shows you the showtimes of all movies playing across India. Easily doable using data from a few sources:
+
+1. TicketNew, now owned by Zomato
+2. Cinepolis App
+3. PVR App
+4. BookMyShow
+
+<https://showtimeapi.com> does not support India currently, so it might be
+worth selling them the data feeds as well. Splitting across 4 different
+providers gives some redundancy as well. The majority of screens get covered
+3 ways via this, however standardising the data might be a problem.
 
 ---
 
