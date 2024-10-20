@@ -90,6 +90,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
 - [Nutri-score calcuator](#nutri-score-calcuator)
 - [Indian Grocery Barcode Database](#indian-grocery-barcode-database)
 - [showtimes.in](#showtimesin)
+- [India Automobile Privacy Review](#india-automobile-privacy-review)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1548,6 +1549,23 @@ A simple website that shows you the showtimes of all movies playing across India
 worth selling them the data feeds as well. Splitting across 4 different
 providers gives some redundancy as well. The majority of screens get covered
 3 ways via this, however standardising the data might be a problem.
+
+<https://www.internationalshowtimes.com/markets> says they support India, but
+I don't know what's the data source they use.
+
+## India Automobile Privacy Review
+
+I really wish there was a truly private modern automobile manufacturer in
+India that used end-to-end encryption for all data that they collected, storing
+it only on the vehicle (under device-encryption) and synced over E2E to their
+app/website if needed.
+
+Unfortunately, there is none. The best we can do to raise awareness on the matter
+is do something akin to Mozilla's [Privacy not Included](https://foundation.mozilla.org/en/privacynotincluded/categories/cars/)
+review, where they compared 25 US car companies and found out that none care about
+[privacy](https://foundation.mozilla.org/en/blog/privacy-nightmare-on-wheels-every-car-brand-reviewed-by-mozilla-including-ford-volkswagen-and-toyota-flunks-privacy-test/).
+
+This is a non-technical project, and quite easily doable by a bunch of policy/legal folks.
 
 ---
 
