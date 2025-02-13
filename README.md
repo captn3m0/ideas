@@ -1457,6 +1457,8 @@ or Cloudflare Workers. It should be a single page that lets users
 create events, and submit RSVPs, with a single function that is easily
 embeddable to an existing website.
 
+Initial version: rsvp2go.ohmyscript.com
+
 ## One Page Event Hosting platform
 
 Considering building this at `host.blr.today`: A single page no-login
