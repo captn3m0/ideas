@@ -29,7 +29,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
   - [✨🎁 Collaborative Bookmarking](#-collaborative-bookmarking)
   - [🚀Lightspeed for Chrome](#lightspeed-for-chrome)
   - [Personal Social Media Analytics](#personal-social-media-analytics)
-  - [API for Workflowy](#api-for-workflowy)
+  - [API for Workflowy :rocket:](#api-for-workflowy-rocket)
 - [A Delta-debugging approach to minify HTTP Requests](#a-delta-debugging-approach-to-minify-http-requests)
   - [Email on top of keybase (or other social-media-proofs)](#email-on-top-of-keybase-or-other-social-media-proofs)
   - [🚀 Newsletters for GitHub](#-newsletters-for-github)
@@ -92,6 +92,7 @@ worth building) are at [BADIDEAS.md](BADIDEAS.md).
   - [Indian Grocery Barcode Database](#indian-grocery-barcode-database)
   - [showtimes.in](#showtimesin)
   - [India Automobile Privacy Review](#india-automobile-privacy-review)
+  - [Twitter to Mastodon Import](#twitter-to-mastodon-import)
   - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -168,13 +169,17 @@ incarnations of this idea are all based on data-export-dumps. See the following 
 
 - https://github.com/skglas/tweetarchive-to-sqlite
 
-## API for Workflowy
+## API for Workflowy :rocket:
 
 Workflowy is a cool tool that I use for note-taking. It allows infinitely nested
 lists with @mention and #hashtag support. One thing it lacks currently is API
 for me to access my own data. I think workflowy is a great tool that could
 become a lot better if there were a way for developers to hook into it. (For
 example using workflowy as a data-backend for a todo-app).
+
+Workflowy now has an official API: https://community.workflowy.com/t/rudimentary-api/536/18
+See #17 as well. I am currently using <https://ugmonk.com/en-de/pages/analog> and it would 
+be nice to use the API to sync my TODO at end-of-day to workflowy with a photo.
 
 # A Delta-debugging approach to minify HTTP Requests
 
@@ -1582,6 +1587,17 @@ review, where they compared 25 US car companies and found out that none care abo
 [privacy](https://foundation.mozilla.org/en/blog/privacy-nightmare-on-wheels-every-car-brand-reviewed-by-mozilla-including-ford-volkswagen-and-toyota-flunks-privacy-test/).
 
 This is a non-technical project, and quite easily doable by a bunch of policy/legal folks.
+
+## Twitter to Mastodon Import
+
+Mastodon currently does not support backdating posts (for obvious reasons). 
+See https://github.com/mastodon/mastodon/issues/15912. But if you have
+direct access to the mastodon database, you can still forcefully insert
+old posts into the database? Find a way to do a complete twitter import
+into Mastodon. Bonus points for matching ID as well. Since these
+are old posts, we don't want the Mastodon scheduling system to pick them
+up and distribute them anymore. We want them avaliable for the searchability
+and archiveability of it.
 
 ---
 
