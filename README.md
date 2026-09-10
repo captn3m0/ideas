@@ -1599,6 +1599,12 @@ are old posts, we don't want the Mastodon scheduling system to pick them
 up and distribute them anymore. We want them avaliable for the searchability
 and archiveability of it.
 
+## Pluggable fprintd
+
+Same idea as https://github.com/uunicorn/open-fprintd
+
+> Existing architecture of fprintd and libfprint does not allow loosely coupled integration with 3rd party drivers. This is done on purpose to force hardware vendors to contribute their drivers as an open source. Unfortunately this approach prevents open source projects (like python-validity) to be integrated with the rest of the stack without creating a shim which could be exploited by the vendors to create a binary driver distributions.
+
 ---
 
 ## Licence
