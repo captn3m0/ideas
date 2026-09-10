@@ -149,6 +149,8 @@ easier to port the webextension version to Chrome itself.
 _Update_: [@tallpants](https://github.com/tallpants) made this:
 https://github.com/tallpants/lightspeed
 
+## Localfirst GitHub Browser
+
 ## Personal Social Media Analytics
 
 WolframAlpha launched a [Personal Analytics](https://www.pcmag.com/news/hands-on-wolfram-alphas-personal-analytics-for-facebook)
@@ -181,7 +183,7 @@ Workflowy now has an official API: https://community.workflowy.com/t/rudimentary
 See #17 as well. I am currently using <https://ugmonk.com/en-de/pages/analog> and it would 
 be nice to use the API to sync my TODO at end-of-day to workflowy with a photo.
 
-# A Delta-debugging approach to minify HTTP Requests
+# A Delta-debugging approach to minify HTTP Requests :rocket:
 
 Take an idempotent HTTP request as an input. Either as a curl command,
 or as a HAR file, or a BRU file. Run it once to see a successful output as a tuple
@@ -193,6 +195,35 @@ and some of other similar multi-value headers (such as Accept) as separate input
 
 The output should be a copyable curl command (and generated to other formats) that is the minimal version
 of the input.
+
+Shipped using Claude at <https://github.com/captn3m0/kamsekam> and <https://pypi.org/project/kamsekam>. Sample:
+
+```console
+$ kamsekam -- curl 'https://data.services.jetbrains.com/products?code=TC&release.type=eap%2Crc%2Crelease&fields=distributions%2Clink%2Cname%2Creleases&_=1789067502753' \
+  --compressed \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en' \
+  -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+  -H 'Origin: https://www.jetbrains.com' \
+  -H 'DNT: 1' \
+  -H 'Sec-GPC: 1' \
+  -H 'Connection: keep-alive' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Priority: u=4' \
+  -H 'TE: trailers'
+  input     GET https://data.services.jetbrains.com/products · 20 atoms · 503 bytes
+  baseline  200 application/json 176949B sha256:67308c6c7677
+  minimised 21 requests · 20 atoms → 2 · 388 bytes saved
+
+    keep  query:code                   ?code=TC
+    keep  query:fields                 ?fields=distributions%2Clink%2Cname%2Creleases
+    drop  18 removed: header:user-agent, header:accept, header:accept-language, header:accept-encoding[0], header:accept-encoding[1], header:accept-encoding[2], header:accept-encoding[3], header:origin, header:dnt, header:sec-gpc, header:connection, header:sec-fetch-dest, header:sec-fetch-mode, header:sec-fetch-site, header:priority, header:te, query:release.type, query:_
+
+curl 'https://data.services.jetbrains.com/products?code=TC&fields=distributions%2Clink%2Cname%2Creleases'
+```
 
 ## Email on top of keybase (or other social-media-proofs)
 
@@ -1599,11 +1630,93 @@ are old posts, we don't want the Mastodon scheduling system to pick them
 up and distribute them anymore. We want them avaliable for the searchability
 and archiveability of it.
 
+
 ## Pluggable fprintd
 
 Same idea as https://github.com/uunicorn/open-fprintd
 
 > Existing architecture of fprintd and libfprint does not allow loosely coupled integration with 3rd party drivers. This is done on purpose to force hardware vendors to contribute their drivers as an open source. Unfortunately this approach prevents open source projects (like python-validity) to be integrated with the rest of the stack without creating a shim which could be exploited by the vendors to create a binary driver distributions.
+
+
+## Sneaky Commit Tracker
+
+You can sneak diffs into git merge commits: https://tavianator.com/2025/sneaky.html
+
+These are rarely-used, but could be a supply-chain-security threat worth building
+a tracker for. Maybe across all repos in the oss-fuzz set?
+
+## Electron Zoo
+
+A zoo/dataset of various packaged Electron applications, distributed in all forms:
+
+- Mac DMG files
+- Linux packages (DEB/RPM/tar.gz etc)
+- AppImages, Flatpaks, Snaps
+- Windows Packages (MSI/CAB/EXE)
+
+Why? See Electron Survey above.
+
+## Google Maps, but in Apple
+
+In the European Economic Area, Google must let you build a Google Maps
+competitor using the Google Maps APIs. My main usecase is clicking on 
+Google Maps URLs, and the mobile-web version of Google Maps being horribly bad UX.
+
+What I juts want is a shim that redirects from Google Maps (on the mobile web) to
+Apple Maps.
+
+## Nix-like global configs for ArchLinux using augeas
+
+Arch's pacnew workflow is the most annoying part of running it.Nix solves for
+this by mantaining a global configuration that compiles down to local
+configurations against each package, so you never even see or care about the
+final config file. Part of it stems from pacsaves being text-diffs, and
+configuration files are a higher-abstraction.
+
+Augeas already solves the parsing half of this with bidirectional
+lenses for most configuration formats worth caring about, so the tool I want
+is a pacman post-upgrade hook that reads the live config and the new default
+through those lenses, computes the user's delta as a declarative patch
+against the package's canonical default, and re-applies that patch to the new
+default to produce the merged file. 
+
+The patch itself — not the generated config — is what gets version-controlled,
+because it is minimal, semantic, and the generated file is reproducible from
+it at any time.
+
+## Remote SQLite support for jekyll-sqlite
+
+Services like DoltHub and DBHub etc make it possible to host and collaborate on your SQLite dataset. The new wave of SQLite products means there will be a lot more interesting tooling - CloudFlare D1 is a good example, Litestream etc.
+
+This enriches the data/presentation split, by letting you manage the database better elsewhere - collaboration tooling like branching, tagging webhooks etc.
+
+## SQLite on the Edge against S3\*
+
+SQLite already builds for WASM, and you can run it on the edge compute platforms. What I'd like to have is a serverless environment that can use *large* SQLite datasets, hosted on S3\*, but directly render it on the edge. The current edge/deno/typescript tooling leaves a lot to be desired.
+
+## A two-phase page generator for jekyll-sqlite
+
+Currently, `jekyll-sqlite` runs before `jekyll-datapage-gen`, ensuring that you can generate your data, which can then be rendered across multiple pages with the latter.
+
+However, there are certain usecases, where you might want to render pages using `jekyll-datapage-gen`, and then run per-page queries on all of them. Maybe you already have a CSV file for the various pages you need, and datapage generator configured, but you need to enrich these pages with more data via sqlite queries.
+
+## A routing-first SSG
+
+Right now, platforms like Netlify/Vercel give you two options:
+
+1. A cheap static site hosting service.
+2. A edge compute platform for functions.
+
+What we need is (2) that automatically feeds its outputs to (1) - a writethrough-serverless-static-site-generator. There's probably some prior art for this. Probably the same as a forever-caching-proxy in front.
+
+Static-site generators work in two passes:
+
+1. Collect all the input, run it alongside the configuration.
+2. Render the files in the output directory.
+
+There is probably scope for a static-site generator, that works on the same premise as above, but allows you to run it in a edge mode, where it only does the minimal compute needed to render a specific page.
+
+You could write a dynamic app, but it switches to routing-first, which is not what we want. There's probably an interesting hybrid possible here, where a routing-first static site generator could mark specific routes as "edge-friendly", and can generate those on the edge if needed.
 
 ---
 
